@@ -1,6 +1,8 @@
 import Section from "./Section";
 import { curve, heroBackground, saqib } from "../assets";
 import Button from "./Button";
+import Notification from "./Notification";
+import CompanyLogos from "./CompanyLogos";
 import { useRef } from "react";
 
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
@@ -53,17 +55,21 @@ const Hero = () => {
                   height={490}
                   alt="AI"
                 />
-                {/* <ScrollParallax isAbsolutelyPositioned>
-                  <ul className="absolute -left-[5.5rem] bottom-[7.5rem] hidden rounded-2xl border border-n-1/10 bg-n-9/40 px-1 py-1 backdrop-blur xl:flex">
+                <ScrollParallax isAbsolutelyPositioned>
+                  <ul className="absolute -left-[12rem] bottom-[2rem] hidden rounded-2xl border border-n-1/10 bg-n-9/40 px-1 py-1 backdrop-blur xl:flex">
                     {heroIcons.map((icon, index) => (
                       <li className="p-5" key={index}>
                         <img src={icon} width={24} height={25} alt={icon} />
                       </li>
                     ))}
                   </ul>
-                </ScrollParallax> */}
+                </ScrollParallax>
+                <ScrollParallax isAbsolutelyPositioned>
+                  <Notification className="hidden absolute -right-[12rem] bottom-[8rem] w-[18rem] xl:flex" title="Alex check Porfolio"/>
+                </ScrollParallax>
               </div>
             </div>
+            <Gradient/>
           </div>
           <div className="absolute -top-[55%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[40%]">
             <img
@@ -76,6 +82,8 @@ const Hero = () => {
           </div>
           <BackgroundCircles />
         </div>
+
+        <CompanyLogos className="hidden relative z-10 mt-20 lg:block"/>
       </div>
     </Section>
   );

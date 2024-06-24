@@ -1,7 +1,19 @@
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="48" height="48" rx="12" fill="#7ADB78"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M31 29.5C31 28.6716 30.3284 28 29.5 28H20C17.2386 28 15 25.7614 15 23C15 20.2386 17.2386 18 20 18H23V20H20C18.3432 20 17 21.3432 17 23C17 24.6569 18.3432 26 20 26H29.5C31.433 26 33 27.567 33 29.5C33 31.433 31.433 33 29.5 33H16C15.4477 33 15 32.5523 15 32C15 31.4477 15.4477 31 16 31H29.5C30.3284 31 31 30.3284 31 29.5Z" fill="#0E0C15"/>
-<path d="M32 16H28V18H32C32.5523 18 33 17.5523 33 17C33 16.4477 32.5523 16 32 16Z" fill="#0E0C15"/>
-<path d="M32 20H28V22H32C32.5523 22 33 21.5523 33 21C33 20.4477 32.5523 20 32 20Z" fill="#0E0C15"/>
-<path d="M21 19C21 16.7909 22.7909 15 25 15H29C29.5523 15 30 15.4477 30 16V22C30 22.5523 29.5523 23 29 23H25C22.7909 23 21 21.2091 21 19Z" fill="#0E0C15"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <g>
+  <path d="m1 11v6 3c0 1.105 0.8954 2 2 2h19c1.105 0 2-0.895 2-2v-3-6h-23z" fill="#95a5a6"/>
+  <path d="m0 2v9 7 3c0 1.105 0.89543 2 2 2h19c1.105 0 2-0.895 2-2v-3-7-9h-23z" fill="#bdc3c7"/>
+  <path fill="#7f8c8d" d="m2 4v5h1v-3l2 3h1v-5h-1v3l-2-3h-1zm5 0v5h4v-1h-3v-1h2v-1h-2v-1h3v-1h-4zm5 0v5h1l1-2 1 2h1v-5h-1v3l-1-2-1 2v-3h-1zm6.5 0c-0.828 0-1.5 0.6716-1.5 1.5s0.672 1.5 1.5 1.5h1c0.276 0 0.5 0.2239 0.5 0.5s-0.224 0.5-0.5 0.5h-0.969-1.531v1h1.531 0.969c0.828 0 1.5-0.6716 1.5-1.5s-0.672-1.5-1.5-1.5h-0.5-0.5c-0.276 0-0.5-0.2239-0.5-0.5s0.224-0.5 0.5-0.5h0.5 0.5 1.5v-1h-1.5-1z"/>
+ </g>
+ <g fill="#95a5a6">
+  <rect height="7" width="9" y="11" x="2"/>
+  <rect height="1" width="9" y="15" x="12"/>
+  <rect height="1" width="9" y="19" x="2"/>
+  <rect height="1" width="9" y="17" x="12"/>
+  <rect height="1" width="9" y="13" x="12"/>
+  <rect height="1" width="9" y="11" x="12"/>
+  <path d="m0 20v1c0 1.105 0.89543 2 2 2h19c1.105 0 3-0.895 3-2v-1c0 1.105-1.895 2-3 2h-19c-1.1046 0-2-0.895-2-2z"/>
+  <rect height="1" width="9" y="19" x="12"/>
+ </g>
 </svg>

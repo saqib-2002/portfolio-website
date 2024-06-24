@@ -17,14 +17,15 @@ const Header = () => {
     // console.log(openNavigation)
 
     setOpenNavigation(() => {
-      setOpenNavigation(!openNavigation)
+      setOpenNavigation(!openNavigation);
     });
     return openNavigation ? disablePageScroll() : enablePageScroll();
   };
-  const handleClick = () => setOpenNavigation(() => {
-    setOpenNavigation(false);
-    return enablePageScroll();
-  });
+  const handleClick = () =>
+    setOpenNavigation(() => {
+      setOpenNavigation(false);
+      return enablePageScroll();
+    });
   // toggleNavigation();
   return (
     <div
@@ -54,13 +55,13 @@ const Header = () => {
         </nav>
 
         <a
-          href="signup"
+          href="#signup"
           className="button mr-8 hidden text-n-1/50 transition-colors hover:text-n-1 lg:block"
         >
-          New account
+          Message me
         </a>
-        <Button className="hidden lg:flex" href="#login">
-          Sign in
+        <Button className="hidden lg:flex" href="https://github.com/Saqib-2002">
+          GitHub
         </Button>
         <Button
           className="ml-auto lg:hidden"
