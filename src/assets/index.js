@@ -27,14 +27,14 @@ import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
-import discord from "./collaboration/discord.png";
-import figma from "./collaboration/figma.png";
-import framer from "./collaboration/framer.png";
-import notion from "./collaboration/notion.png";
-import photoshop from "./collaboration/photoshop.png";
-import protopie from "./collaboration/protopie.png";
-import raindrop from "./collaboration/raindrop.png";
-import slack from "./collaboration/slack.png";
+import cloud from "./collaboration/tailwind.svg";
+import ml from "./collaboration/reactjs.svg";
+import js from "./collaboration/nodejs.svg";
+import reactjs from "./collaboration/nextjs.svg";
+import nextjs from "./collaboration/cloud.svg";
+import nodejs from "./collaboration/js.svg";
+import tailwind from "./collaboration/ml.svg";
+import mongo from "./collaboration/mongo.svg";
 
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
@@ -76,14 +76,22 @@ import benefitImage4 from "./benefits/geolocation.png";
 import benefitImage5 from "./benefits/college-canteen.png";
 import benefitImage6 from "./benefits/slide-form.png";
 
-import discordBlack from "./socials/discord.svg";
+import github from "./socials/github.svg";
 import facebook from "./socials/facebook.svg";
 import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
+import techhub from "./services/techhub_logo.png"
+import its from "./services/its.png";
+import microsoft from "./services/microsoft.png"
+import google from "./services/google.png"
 
 export {
   brainwave,
+  techhub,
+  its,
+  microsoft,
+  google,
   check,
   check2,
   loading1,
@@ -110,14 +118,14 @@ export {
   heroBackground,
   curve1,
   curve2,
-  discord,
-  figma,
-  framer,
-  notion,
-  photoshop,
-  protopie,
-  raindrop,
-  slack,
+  cloud,
+  reactjs,
+  tailwind,
+  mongo,
+  nodejs,
+  ml,
+  nextjs,
+  js,
   service1,
   service2,
   service3,
@@ -153,7 +161,7 @@ export {
   benefitImage4,
   benefitImage5,
   benefitImage6,
-  discordBlack,
+  github,
   facebook,
   instagram,
   telegram,

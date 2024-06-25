@@ -12,7 +12,8 @@ const CompanyLogos = ({ className }) => {
             key={index}
             className="flex h-[8.5rem] flex-1 items-center justify-center"
           >
-            <img src={logo} alt={logo} width={134} height={28} />
+            <img src={logo.title} alt={logo} width={42} height={28} />
+            <p className="flex pointer-events-none pl-4">{ logo.text}</p>
           </li>
         ))}
       </ul>

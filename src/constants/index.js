@@ -11,36 +11,35 @@ import {
   benefitImage4,
   benefitImage5,
   benefitImage6,
-  chromecast,
-  disc02,
-  discord,
-  discordBlack,
+  reactjs,
+  tailwind,
+  mongo,
+  nodejs,
+  ml,
+  nextjs,
+  js,
+  cloud,
+  github,
   facebook,
-  figma,
   file02,
-  framer,
   homeSmile,
   instagram,
   notification2,
   notification3,
   notification4,
-  notion,
-  photoshop,
+  techhub,
+  its,
+  microsoft,
+  google,
   plusSquare,
-  protopie,
-  raindrop,
-  recording01,
-  recording03,
   roadmap1,
   roadmap2,
   roadmap3,
   roadmap4,
   searchMd,
-  slack,
-  sliders04,
+ 
   telegram,
   twitter,
-  yourlogo,
 } from "../assets";
 
 export const navigation = [
@@ -87,21 +86,13 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
-
-export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
+export const companyLogos = [
+  { title: techhub, text: "TechHub Technology" },
+  { title: its, text: "ITS College" },
+  {title:google, text:"Google"},
+  {title:microsoft, text:"Microsoft"},
 ];
 
-export const brainwaveServicesIcons = [
-  recording03,
-  recording01,
-  disc02,
-  chromecast,
-  sliders04,
-];
 
 export const roadmap = [
   {
@@ -140,124 +131,90 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "With a deep understanding of ReactJS, I have successfully implemented various projects that require dynamic and responsive front-end development.";
+export const collabTextRight = "Experienced in MERN stack development, I design and build modern web applications that leverage MongoDB, Express.js, React.js, and Node.js to deliver scalable, efficient, and user-centric solutions for diverse client requirements.";
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
+    title: "React JS - A JavaScript Library",
     text: collabText,
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Innovation driver",
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "Front-end magician",
   },
 ];
 
 export const collabApps = [
   {
     id: "0",
-    title: "Figma",
-    icon: figma,
+    title: "ReactJS",
+    icon: reactjs,
     width: 26,
     height: 36,
   },
   {
     id: "1",
-    title: "Notion",
-    icon: notion,
+    title: "Tailwind",
+    icon: tailwind,
     width: 34,
     height: 36,
   },
   {
     id: "2",
-    title: "Discord",
-    icon: discord,
+    title: "NodeJS",
+    icon: nodejs,
     width: 36,
     height: 28,
   },
   {
     id: "3",
-    title: "Slack",
-    icon: slack,
+    title: "Mongo",
+    icon: mongo,
     width: 34,
     height: 35,
   },
   {
     id: "4",
-    title: "Photoshop",
-    icon: photoshop,
+    title: "NextJS",
+    icon: nextjs,
     width: 34,
     height: 34,
   },
   {
     id: "5",
-    title: "Protopie",
-    icon: protopie,
+    title: "Machine Learning",
+    icon: ml,
     width: 34,
     height: 34,
   },
   {
     id: "6",
-    title: "Framer",
-    icon: framer,
+    title: "JavaScript",
+    icon: js,
     width: 26,
     height: 34,
   },
   {
     id: "7",
-    title: "Raindrop",
-    icon: raindrop,
+    title: "Cloud",
+    icon: cloud,
     width: 38,
     height: 32,
   },
 ];
 
-export const pricing = [
-  {
-    id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
-    price: "0",
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
-  },
-  {
-    id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
-    features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
-    ],
-  },
-  {
-    id: "2",
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: null,
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
-  },
-];
 
 export const benefits = [
   {
     id: "0",
     title: "Travel List App",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    text: "A travel list app designed to organize and manage your travel plans, packing lists, and itineraries seamlessly.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage1,
@@ -265,7 +222,7 @@ export const benefits = [
   {
     id: "1",
     title: "Retro Number Guessing",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    text: "A retro number guessing game where players try to guess a secret number within a limited number of attempts, reminiscent of classic arcade challenges.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -274,7 +231,7 @@ export const benefits = [
   {
     id: "2",
     title: "News Website",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    text: "A dynamic news web app delivering real-time updates and personalized content based on user preferences and trending topics.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage3,
@@ -282,7 +239,7 @@ export const benefits = [
   {
     id: "3",
     title: "Geolocation API",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    text: "A geolocation API provides real-time geographical data and location-based services for applications and websites.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage4,
@@ -291,7 +248,7 @@ export const benefits = [
   {
     id: "4",
     title: "College Canteen",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    text: "A college canteen web app designed to streamline food ordering, payment, and menu browsing for students and staff on campus.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon5,
     imageUrl: benefitImage5,
@@ -299,7 +256,7 @@ export const benefits = [
   {
     id: "5",
     title: "Sliding Login Form",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    text: "A sliding form interface that simplifies user interaction by revealing form fields with smooth sliding animations.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon6,
     imageUrl: benefitImage6,
@@ -309,32 +266,32 @@ export const benefits = [
 export const socials = [
   {
     id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
+    title: "Github",
+    iconUrl: github,
+    url: "https://github.com/Saqib-2002",
   },
   {
     id: "1",
     title: "Twitter",
     iconUrl: twitter,
-    url: "#",
+    url: "https://x.com/Saqib_2002",
   },
   {
     id: "2",
     title: "Instagram",
     iconUrl: instagram,
-    url: "#",
+    url: "https://www.instagram.com/saqib_2002?igsh=Y2c4bjJ6cnl6d3Np ",
   },
   {
     id: "3",
     title: "Telegram",
     iconUrl: telegram,
-    url: "#",
+    url: "http://t.me/Saqib_2002",
   },
   {
     id: "4",
     title: "Facebook",
     iconUrl: facebook,
-    url: "#",
+    url: "https://www.facebook.com/saqib.saifi.9212?mibextid=ZbWKwL ",
   },
 ];

@@ -5,7 +5,7 @@ import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
 import { useRef } from "react";
 
-import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
+import { BackgroundCircles, Gradient } from "./design/Hero";
 import { heroIcons } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
 const Hero = () => {
@@ -56,7 +56,7 @@ const Hero = () => {
                   alt="AI"
                 />
                 <ScrollParallax isAbsolutelyPositioned>
-                  <ul className="absolute -left-[12rem] bottom-[2rem] hidden rounded-2xl border border-n-1/10 bg-n-9/40 px-1 py-1 backdrop-blur xl:flex">
+                  <ul className="absolute -left-[20rem] bottom-[4rem] hidden rounded-2xl border border-n-1/10 bg-n-9/40 px-1 py-1 backdrop-blur xl:flex">
                     {heroIcons.map((icon, index) => (
                       <li className="p-5" key={index}>
                         <img src={icon} width={24} height={25} alt={icon} />
@@ -65,7 +65,7 @@ const Hero = () => {
                   </ul>
                 </ScrollParallax>
                 <ScrollParallax isAbsolutelyPositioned>
-                  <Notification className="hidden absolute -right-[12rem] bottom-[8rem] w-[18rem] xl:flex" title="Alex check Porfolio"/>
+                  <Notification className="hidden absolute -right-[23rem] bottom-[18rem] w-[20rem] xl:flex" title="Alex checked Porfolio"/>
                 </ScrollParallax>
               </div>
             </div>

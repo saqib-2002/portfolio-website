@@ -7,7 +7,7 @@ import ClipPath from "../assets/svg/ClipPath";
 // import Button from "./Button"
 const Benefits = () => {
   return (
-    <Section id="features">
+    <Section id="features" crosses>
       <div className="realtive container z-2">
         <Heading
           className="text-center md:max-w-md lg:max-w-2xl"

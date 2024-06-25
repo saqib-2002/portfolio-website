@@ -14,22 +14,23 @@ const Header = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
 
   const toggleNavigation = () => {
-    // console.log(openNavigation)
-
-    setOpenNavigation(() => {
-      setOpenNavigation(!openNavigation);
-    });
-    return openNavigation ? disablePageScroll() : enablePageScroll();
-  };
-  const handleClick = () =>
-    setOpenNavigation(() => {
+    if (openNavigation) {
       setOpenNavigation(false);
-      return enablePageScroll();
-    });
+      enablePageScroll();
+    } else {
+      setOpenNavigation(true);
+      disablePageScroll();
+    }
+  };
+  const handleClick = () => {
+    if (!openNavigation) return;
+    enablePageScroll();
+    setOpenNavigation(false);
+  };
   // toggleNavigation();
   return (
     <div
-      className={`fixed left-0 top-0 z-50 w-full border-b border-n-6 bg-n-8/90 backdrop-blur-sm lg:bg-n-8/90 lg:backdrop-blur-sm ${openNavigation ? "bg-n-8" : "bg-n-8/90"}`}
+      className={`fixed left-0 top-0 z-50 w-full border-b border-n-6 backdrop-blur-sm lg:bg-n-8/90 lg:backdrop-blur-sm ${openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"}`}
     >
       <div className="xl:px=10 flex items-center px-5 max-lg:py-4 lg:px-7.5">
         <a className="block w-[12rem] xl:mr-8" href="#hero">
@@ -60,7 +61,7 @@ const Header = () => {
         >
           Message me
         </a>
-        <Button className="hidden lg:flex" href="https://github.com/Saqib-2002">
+        <Button className="hidden lg:flex" href="https://github.com/Saqib-2002" target="_blank">
           GitHub
         </Button>
         <Button
