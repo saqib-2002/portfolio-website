@@ -41,7 +41,7 @@ const Hero = () => {
             skills while staying updated with the latest trends and
             technologies.
           </p>
-          <Button href="/pricing">My Resume</Button>
+          <Button href="#">My Resume</Button>
         </div>
         <div className="md:mx-w-5xl relative mx-auto max-w-[23rem] xl:mb-24">
           <div className="relative z-1 rounded-2xl bg-conic-gradient p-0.5">
