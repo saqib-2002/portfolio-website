@@ -41,7 +41,12 @@ const Hero = () => {
             skills while staying updated with the latest trends and
             technologies.
           </p>
-          <Button href="#">My Resume</Button>
+          <Button
+            href="https://drive.google.com/file/d/1feJ-Dgx3fOcNsO-epGeBYtEcKZqBK4or/view?usp=sharing"
+            target="_blank"
+          >
+            My Resume
+          </Button>
         </div>
         <div className="md:mx-w-5xl relative mx-auto max-w-[23rem] xl:mb-24">
           <div className="relative z-1 rounded-2xl bg-conic-gradient p-0.5">
@@ -65,11 +70,14 @@ const Hero = () => {
                   </ul>
                 </ScrollParallax>
                 <ScrollParallax isAbsolutelyPositioned>
-                  <Notification className="hidden absolute -right-[23rem] bottom-[18rem] w-[20rem] xl:flex" title="Alex checked Porfolio"/>
+                  <Notification
+                    className="absolute -right-[23rem] bottom-[18rem] hidden w-[20rem] xl:flex"
+                    title="Alex checked Porfolio"
+                  />
                 </ScrollParallax>
               </div>
             </div>
-            <Gradient/>
+            <Gradient />
           </div>
           <div className="absolute -top-[55%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[40%]">
             <img
@@ -83,7 +91,7 @@ const Hero = () => {
           <BackgroundCircles />
         </div>
 
-        <CompanyLogos className="hidden relative z-10 mt-20 lg:block"/>
+        <CompanyLogos className="relative z-10 mt-20 hidden lg:block" />
       </div>
     </Section>
   );
