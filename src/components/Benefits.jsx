@@ -30,7 +30,10 @@ const Benefits = () => {
                     width={48}
                     height={48}
                   />
-                  <a href="#" className="pointer-events-auto ml-auto cursor-pointer font-code text-xs font-bold uppercase tracking-wider text-n-1 hover:text-n-2">
+                  <a
+                    href="#"
+                    className="pointer-events-auto ml-auto cursor-pointer font-code text-xs font-bold uppercase tracking-wider text-n-1 hover:text-n-2"
+                  >
                     Explore more
                   </a>
                   <Arrow />
