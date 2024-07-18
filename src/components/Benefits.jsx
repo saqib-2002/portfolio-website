@@ -4,7 +4,7 @@ import { benefits } from "../constants";
 import Arrow from "../assets/svg/Arrow";
 import GradientLight from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
-// import Button from "./Button"
+import Button from "./Button"
 const Benefits = () => {
   return (
     <Section id="features" crosses>
@@ -31,8 +31,8 @@ const Benefits = () => {
                     height={48}
                   />
                   <a
-                    href="#"
-                    className="pointer-events-auto ml-auto cursor-pointer font-code text-xs font-bold uppercase tracking-wider text-n-1 hover:text-n-2"
+                    href={item.explore}
+                    className="pointer-events-auto ml-auto cursor-pointer font-code text-xs font-bold uppercase tracking-wider text-n-1 hover:text-color-1"
                   >
                     Explore more
                   </a>
@@ -60,7 +60,7 @@ const Benefits = () => {
             </div>
           ))}
         </div>
-        {/* <Button className="">Explore more on Github</Button> */}
+        <Button className="">Explore more on Github</Button>
       </div>
     </Section>
   );

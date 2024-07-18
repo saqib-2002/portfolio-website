@@ -1,4 +1,10 @@
 import {
+  benefitCard1,
+  benefitCard2,
+  benefitCard3,
+  benefitCard4,
+  benefitCard5,
+  benefitCard6,
   benefitIcon1,
   benefitIcon2,
   benefitIcon3,
@@ -37,7 +43,6 @@ import {
   roadmap3,
   roadmap4,
   searchMd,
- 
   telegram,
   twitter,
 } from "../assets";
@@ -89,10 +94,9 @@ export const notificationImages = [notification4, notification3, notification2];
 export const companyLogos = [
   { title: techhub, text: "TechHub Technology" },
   { title: its, text: "ITS College" },
-  {title:google, text:"Google"},
-  {title:microsoft, text:"Microsoft"},
+  { title: google, text: "Google" },
+  { title: microsoft, text: "Microsoft" },
 ];
-
 
 export const roadmap = [
   {
@@ -132,7 +136,8 @@ export const roadmap = [
 
 export const collabText =
   "With a deep understanding of ReactJS, I have successfully implemented various projects that require dynamic and responsive front-end development.";
-export const collabTextRight = "Experienced in MERN stack development, I design and build modern web applications that leverage MongoDB, Express.js, React.js, and Node.js to deliver scalable, efficient, and user-centric solutions for diverse client requirements.";
+export const collabTextRight =
+  "Experienced in MERN stack development, I design and build modern web applications that leverage MongoDB, Express.js, React.js, and Node.js to deliver scalable, efficient, and user-centric solutions for diverse client requirements.";
 
 export const collabContent = [
   {
@@ -209,57 +214,62 @@ export const collabApps = [
   },
 ];
 
-
 export const benefits = [
   {
     id: "0",
     title: "Travel List App",
     text: "A travel list app designed to organize and manage your travel plans, packing lists, and itineraries seamlessly.",
-    backgroundUrl: "./src/assets/benefits/card-1.svg",
+    backgroundUrl: benefitCard1,
     iconUrl: benefitIcon1,
     imageUrl: benefitImage1,
+    explore: "https://github.com/Saqib-2002/Travel-List-App--React",
   },
   {
     id: "1",
     title: "Retro Number Guessing",
     text: "A retro number guessing game where players try to guess a secret number within a limited number of attempts, reminiscent of classic arcade challenges.",
-    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    backgroundUrl: benefitCard2,
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
     light: true,
+    explore: "https://github.com/Saqib-2002/Retro---Guess-the-number",
   },
   {
     id: "2",
     title: "News Website",
     text: "A dynamic news web app delivering real-time updates and personalized content based on user preferences and trending topics.",
-    backgroundUrl: "./src/assets/benefits/card-3.svg",
+    backgroundUrl: benefitCard3,
     iconUrl: benefitIcon3,
     imageUrl: benefitImage3,
+    explore: "https://github.com/Saqib-2002/News-Website-internship-",
   },
   {
     id: "3",
     title: "Geolocation API",
     text: "A geolocation API provides real-time geographical data and location-based services for applications and websites.",
-    backgroundUrl: "./src/assets/benefits/card-4.svg",
+    backgroundUrl: benefitCard4,
     iconUrl: benefitIcon4,
     imageUrl: benefitImage4,
     light: true,
+    explore: "https://github.com/Saqib-2002/Geolocation-API",
   },
   {
     id: "4",
     title: "College Canteen",
     text: "A college canteen web app designed to streamline food ordering, payment, and menu browsing for students and staff on campus.",
-    backgroundUrl: "./src/assets/benefits/card-5.svg",
+    backgroundUrl: benefitCard5,
     iconUrl: benefitIcon5,
     imageUrl: benefitImage5,
+    explore: "https://github.com/Saqib-2002/The-College-Canteen-Final",
   },
   {
     id: "5",
     title: "Sliding Login Form",
     text: "A sliding form interface that simplifies user interaction by revealing form fields with smooth sliding animations.",
-    backgroundUrl: "./src/assets/benefits/card-6.svg",
+    backgroundUrl: benefitCard6,
     iconUrl: benefitIcon6,
     imageUrl: benefitImage6,
+    explore: "https://github.com/Saqib-2002/Sliding-Login-Form",
   },
 ];
 
