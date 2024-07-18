@@ -70,14 +70,14 @@ export const navigation = [
   },
   {
     id: "5",
-    title: "New account",
-    url: "#signup",
+    title: "Message Me",
+    url: "#messageme",
     onlyMobile: true,
   },
   {
     id: "6",
     title: "Git Hub",
-    url: "#login",
+    url: "https://github.com/Saqib-2002",
     onlyMobile: true,
   },
 ];
