@@ -57,7 +57,7 @@ import notification2 from "./notification/image-2.png";
 import notification3 from "./notification/image-3.png";
 import notification4 from "./notification/image-4.png";
 
-import benefitCard1 from "../benefitsCards/card-1.svg";
+import benefitCard1 from "../benefitsCards/card-1.jpeg";
 import benefitCard2 from "../benefitsCards/card-2.svg";
 import benefitCard3 from "../benefitsCards/card-3.svg";
 import benefitCard4 from "../benefitsCards/card-4.svg";
