@@ -5,6 +5,8 @@ import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
 import { useRef } from "react";
 
+
+
 import { BackgroundCircles, Gradient } from "./design/Hero";
 import { heroIcons } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
@@ -93,7 +95,7 @@ const Hero = () => {
 
         <CompanyLogos className="relative z-10 mt-20 hidden lg:block" />
       </div>
-    </Section>
+      </Section>
   );
 };
 

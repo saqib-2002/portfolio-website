@@ -9,6 +9,7 @@ import Footer from "./components/Footer.jsx";
 import { Routes, Route } from "react-router-dom";
 
 import About from "./components/About.jsx";
+import ContactForm from "./components/ContactForm.jsx";
 
 // import { navigation } from "../constants";
 
@@ -20,8 +21,10 @@ const App = () => {
       {/* {navigation.map((item) => (
         <Route path={item.url} key={item.id} />
       ))} */}
-      <Route path="/about" element={ <About/>} />
-    </Routes>
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<ContactForm/>}/>
+      </Routes>
+
   );
 };
 
