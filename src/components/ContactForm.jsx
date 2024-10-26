@@ -7,7 +7,7 @@ const ContactForm = () => {
     const form = useRef();
     
   const sendEmail = (e) => {
-      e.preventDefault();
+    e.preventDefault();
       console.log(form.current);
     emailjs
       .sendForm("service_m2bb2xg", "template_iqp23t5", form.current, {
