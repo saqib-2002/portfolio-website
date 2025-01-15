@@ -61,12 +61,12 @@ export const navigation = [
   {
     id: "2",
     title: "What I do",
-    url: "#what-i-do",
+    url: "what-i-do",
   },
   {
     id: "3",
     title: "Projects",
-    url: "#projects",
+    url: "projects",
   },
   {
     id: "4",
@@ -76,7 +76,7 @@ export const navigation = [
   {
     id: "5",
     title: "Message Me",
-    url: "#messageme",
+    url: "message-me",
     onlyMobile: true,
   },
   {
