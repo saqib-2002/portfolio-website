@@ -6,6 +6,7 @@ import GradientLight from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
 import Button from "./Button";
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
+import { Link } from "react-router-dom";
 
 const BenefitItem = ({ item }) => {
   const [ref, isVisible] = useIntersectionObserver({
@@ -16,11 +17,10 @@ const BenefitItem = ({ item }) => {
   return (
     <div
       ref={ref}
-      className={`benefit-item relative block bg-[length:100%_100%] bg-no-repeat p-0.5 md:max-w-[24rem] transition-all duration-700 ease-out ${
-        isVisible 
-          ? "opacity-100 translate-y-0" 
-          : "opacity-0 translate-y-10"
-      }`}
+      className={`benefit-item relative block bg-[length:100%_100%] bg-no-repeat p-0.5 md:max-w-[24rem] transition-all duration-700 ease-out ${isVisible
+        ? "opacity-100 translate-y-0"
+        : "opacity-0 translate-y-10"
+        }`}
       style={{ backgroundImage: `url(${item.backgroundUrl})` }}
     >
       <div className="pointer-events-none relative z-2 flex min-h-[22rem] flex-col p-[2.4rem]">
@@ -33,12 +33,12 @@ const BenefitItem = ({ item }) => {
             width={48}
             height={48}
           />
-          
-          <a  href={item.explore}
+
+          <Link to={item.explore} target="_blank"
             className="pointer-events-auto ml-auto cursor-pointer font-code text-xs font-bold uppercase tracking-wider text-n-1 hover:text-color-1"
           >
             Explore more
-          </a>
+          </Link>
           <Arrow />
         </div>
       </div>
@@ -64,7 +64,7 @@ const BenefitItem = ({ item }) => {
   );
 };
 
-const Benefits = () => {
+const Card = () => {
   return (
     <Section id="features" crosses>
       <div className="relative container z-2">
@@ -83,4 +83,4 @@ const Benefits = () => {
   );
 };
 
-export default Benefits;
+export default Card;

@@ -1,7 +1,7 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
 import ButtonGradient from "./assets/svg/ButtonGradient.jsx";
-import Benefits from "./components/Benefits.jsx";
+import Card from "./components/Card.jsx";
 // import Button from "./components/Button.jsx";
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
@@ -26,7 +26,7 @@ const HomePage = () => {
   return (
     <>
       <Hero />
-      <Benefits />
+      <Card />
       <Collaboration />
       <ButtonGradient />
     </>
