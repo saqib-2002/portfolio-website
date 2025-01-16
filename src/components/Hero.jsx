@@ -10,8 +10,11 @@ import { useRef } from "react";
 import { BackgroundCircles, Gradient } from "./design/Hero";
 import { heroIcons } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
+
+
 const Hero = () => {
   const parallaxRef = useRef(null);
+  
   return (
     <Section
       className="-mt-[5.25rem] pt-[12rem]"

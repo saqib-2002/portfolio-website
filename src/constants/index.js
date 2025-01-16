@@ -75,8 +75,8 @@ export const navigation = [
   },
   {
     id: "5",
-    title: "Message Me",
-    url: "message-me",
+    title: "Blogs",
+    url: "blogs",
     onlyMobile: true,
   },
   {
@@ -303,5 +303,53 @@ export const socials = [
     title: "Facebook",
     iconUrl: facebook,
     url: "https://www.facebook.com/saqib.saifi.9212?mibextid=ZbWKwL ",
+  },
+];
+
+export const skills = [
+  {
+    id: 1,
+    title: "HTML",
+    currentLevel: 5,
+  },
+  {
+    id: 2,
+    title: "CSS",
+    currentLevel: 4,
+  },
+  {
+    id: 3,
+    title: "JavaScript",
+    currentLevel: 4,
+  },
+  {
+    id: 4,
+    title: "React JS",
+    currentLevel: 4,
+  },
+  {
+    id: 5,
+    title: "Node JS",
+    currentLevel: 2,
+  },
+  {
+    id: 6,
+    title: "Express JS",
+    currentLevel: 3,
+  },
+  {
+    id: 7,
+    title: "MongoDB",
+    currentLevel: 3,
+  },
+  {
+    id: 8,
+    title: "C++",
+    currentLevel: 4,
+  },
+  {
+    id: 9,
+    title: "SQL",
+    currentLevel: 3,
   },
 ];

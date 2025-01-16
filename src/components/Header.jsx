@@ -57,12 +57,12 @@ const Header = () => {
           <HamburgerMenu />
         </nav>
 
-        <a
-          href="#signup"
+        <NavLink
+          to=""
           className="button mr-8 hidden text-n-1/50 transition-colors hover:text-n-1 lg:block"
         >
-          Message me
-        </a>
+          Blogs
+        </NavLink>
         <Button
           className="hidden lg:flex"
           href="https://github.com/Saqib-2002"

@@ -11,6 +11,7 @@ import Footer from "./components/Footer.jsx";
 
 import About from "./components/About.jsx";
 import ContactForm from "./components/ContactForm.jsx";
+import Projects from "./components/Projects.jsx";
 
 const RootLayout = () => {
   return (
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
         path: "contact",
         element: <ContactForm />,
       },
+      {
+        path: "projects",
+        element: <Projects />
+      }
     ],
   },
 ]);
