@@ -5,15 +5,14 @@ import Button from "./Button";
 import { socials } from "../constants";
 import { saqib } from "../assets";
 import { Gradient } from "./design/Hero";
-
+import GradientLight from "./design/GradientLight";
 
 const About = () => {
   return (
     <>
       <Section id="features" crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings className="-mt-[5.25rem] pt-[14rem] flex">
-        <div className="relative container z-2">
+        <div className="relative container z-3">
           <Heading title="Hi, I'm Saqib" className="ml-[2%] h1" />
-
           <p className="body-2 ml-[2%] mb-6 max-w-lg text-n-2 lg:mb-8 -mt-[3rem]">
             Dedicated and passionate about learning new concepts in programming
             and web development, constantly seeking to expand knowledge and
@@ -36,6 +35,9 @@ const About = () => {
               </a>
             ))}
           </ul>
+          <div className="opacity-40">
+            <GradientLight />
+          </div>
         </div>
 
         <div className="md:mx-w-5xl relative mx-auto max-w-[20rem] xl:mb-24 -left-[5.25rem]">

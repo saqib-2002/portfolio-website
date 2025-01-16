@@ -13,12 +13,14 @@ import Footer from "./components/Footer.jsx";
 import About from "./components/About.jsx";
 import ContactForm from "./components/ContactForm.jsx";
 import Projects from "./components/Projects.jsx";
+import Error404 from "./components/Error404.jsx";
 
 const RootLayout = () => {
   return (
     <>
       <Header />
       <Outlet />
+      <ButtonGradient />
       <Footer />
     </>
   );
@@ -30,16 +32,25 @@ const HomePage = () => {
       <Hero />
       <Card />
       <Collaboration />
-      <ButtonGradient />
     </>
   );
 };
+
+const ErrorPage = () => {
+  return (
+    <>
+      <Header />
+      <Error404 />
+      <Footer />
+    </>
+  )
+}
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
-    errorElement: <div>404 Error</div>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",

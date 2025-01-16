@@ -94,8 +94,8 @@ export const notificationImages = [notification4, notification3, notification2];
 export const companyLogos = [
   { title: techhub, text: "TechHub Technology" },
   { title: its, text: "ITS College" },
-  { title: google, text: "Google" },
-  { title: microsoft, text: "Microsoft" },
+  // { title: google, text: "Google" },
+  // { title: microsoft, text: "Microsoft" },
 ];
 
 export const roadmap = [
