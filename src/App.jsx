@@ -1,4 +1,5 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import { Analytics } from '@vercel/analytics/react';
 
 import ButtonGradient from "./assets/svg/ButtonGradient.jsx";
 import Card from "./components/Card.jsx";
@@ -61,7 +62,10 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (<>
+    <RouterProvider router={router} />
+    <Analytics />
+  </>);
 };
 
 export default App;
