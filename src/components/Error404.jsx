@@ -15,4 +15,4 @@ const Error404 = () => {
         </Section>
     )
 }
-export default Error404
+export default Error404;
