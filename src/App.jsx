@@ -1,5 +1,5 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 
 import ButtonGradient from "./assets/svg/ButtonGradient.jsx";
 import Card from "./components/Card.jsx";
@@ -10,7 +10,7 @@ import Collaboration from "./components/Collaboration.jsx";
 // import Roadmap from "./components/Roadmap.jsx";
 import Footer from "./components/Footer.jsx";
 
-import About from "./components/About.jsx";
+import About from "./pages/About.jsx";
 import ContactForm from "./components/ContactForm.jsx";
 import Projects from "./components/Projects.jsx";
 import Error404 from "./components/Error404.jsx";
@@ -43,8 +43,8 @@ const ErrorPage = () => {
       <Error404 />
       <Footer />
     </>
-  )
-}
+  );
+};
 
 const router = createBrowserRouter([
   {
@@ -66,17 +66,19 @@ const router = createBrowserRouter([
       },
       {
         path: "projects",
-        element: <Projects />
-      }
+        element: <Projects />,
+      },
     ],
   },
 ]);
 
 const App = () => {
-  return (<>
-    <RouterProvider router={router} />
-    <Analytics />
-  </>);
+  return (
+    <>
+      <RouterProvider router={router} />
+      <Analytics />
+    </>
+  );
 };
 
 export default App;

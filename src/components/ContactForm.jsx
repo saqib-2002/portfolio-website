@@ -1,4 +1,4 @@
-import Section from "./Section"
+import Section from "./Section";
 import axios from "axios";
 import { Toaster, toast } from "react-hot-toast";
 import { useState } from "react";
@@ -30,7 +30,6 @@ const ContactForm = () => {
   };
 
   const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -64,38 +63,46 @@ const ContactForm = () => {
         setMessage("");
       })
       .catch((err) => {
-        console.log("Failed - ", err);
+        // console.log("Failed - ", err);
+        toast.error("Bad Request! Try Again");
       });
   };
 
   return (
     <>
-      <Section id="features" crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings className="-mt-[5.25rem] pt-[14rem] flex">
-        <div className="grid container my-12">
+      <Section
+        id="features"
+        crosses
+        crossesOffset="lg:translate-y-[5.25rem]"
+        customPaddings
+        className="-mt-[5.25rem] flex pt-[14rem]"
+      >
+        <div className="container my-12 grid">
           <Heading
             title="get in touch"
-            className="text-center capitalize md:max-w-md lg:max-w-2xl h1"
+            className="h1 text-center capitalize md:max-w-md lg:max-w-2xl"
           />
           <div className="flex justify-center">
             <p className="-mt-15 w-1/2 text-center">
-              Feel free to get in touch with me. I am always open to discussing new
-              projects, creative ideas or opportunities to be part of your visions.
+              Feel free to get in touch with me. I am always open to discussing
+              new projects, creative ideas or opportunities to be part of your
+              visions.
             </p>
           </div>
-          <form className="relative container space-y-4 w-1/2 py-12 text-base font-code">
+          <form className="container relative w-1/2 space-y-4 py-12 font-code text-base">
             <input
               type="text"
               placeholder="Full Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full px-4 py-2 bg-n-7 text-n-2 border border-n-7 rounded-md focus:outline-none"
+              className="w-full rounded-md border border-n-7 bg-n-7 px-4 py-2 text-n-2 focus:outline-none"
             />
             <input
               type="email"
               placeholder="Email Address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-2 bg-n-7 text-n-2 border border-n-7 rounded-md focus:outline-none"
+              className="w-full rounded-md border border-n-7 bg-n-7 px-4 py-2 text-n-2 focus:outline-none"
             />
             <div className="relative">
               <input
@@ -104,7 +111,7 @@ const ContactForm = () => {
                 placeholder="(+Country Code) Phone Number"
                 value={number}
                 onChange={(e) => setNumber(e.target.value)}
-                className="w-full px-4 py-2 bg-n-7 text-n-2 border border-n-7 rounded-md focus:outline-none"
+                className="w-full rounded-md border border-n-7 bg-n-7 px-4 py-2 text-n-2 focus:outline-none"
               />
             </div>
             <textarea
@@ -112,37 +119,39 @@ const ContactForm = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               rows="4"
-
-              className="w-full px-4 py-2 bg-n-7 text-n-2 border border-n-7 rounded-md focus:outline-none resize-none" />
+              className="w-full resize-none rounded-md border border-n-7 bg-n-7 px-4 py-2 text-n-2 focus:outline-none"
+            />
             <button
               type="submit"
-              className="w-full bg-n-5 text-white py-2 rounded-md hover:bg-n-6 transition flex items-center justify-center"
+              className="flex w-full items-center justify-center rounded-md bg-n-5 py-2 text-white transition hover:bg-n-6"
               onClick={sendEmail}
             >
               Send Message
             </button>
 
-            <Toaster toastOptions={{
-              style: {
-                backgroundColor: "#15131D",
-                color: "#CAC6DD",
-                fontStyle: "font-code",
-              },
-              success: {
-                iconTheme: {
-                  primary: "#7ADB78"
-                }
-              },
-              error: {
-                iconTheme: {
-                  primary: "#757185"
-                }
-              }
-            }} />
+            <Toaster
+              toastOptions={{
+                style: {
+                  backgroundColor: "#15131D",
+                  color: "#CAC6DD",
+                  fontStyle: "font-code",
+                },
+                success: {
+                  iconTheme: {
+                    primary: "#7ADB78",
+                  },
+                },
+                error: {
+                  iconTheme: {
+                    primary: "#757185",
+                  },
+                },
+              }}
+            />
           </form>
         </div>
       </Section>
     </>
-  )
-}
-export default ContactForm
+  );
+};
+export default ContactForm;
