@@ -1,4 +1,4 @@
-import Social from "../benefitsCards/Social";
+import Social from "./Social";
 import Section from "./Section";
 
 const Footer = () => {

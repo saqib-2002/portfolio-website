@@ -5,7 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 import ButtonGradient from "./assets/svg/ButtonGradient.jsx";
 import Card from "./components/Card.jsx";
 // import Button from "./components/Button.jsx";
-import Header from "./components/Header.jsx";
+import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import Collaboration from "./components/Collaboration.jsx";
 // import Roadmap from "./components/Roadmap.jsx";
@@ -19,7 +19,7 @@ import Error404 from "./components/Error404.jsx";
 const RootLayout = () => {
   return (
     <>
-      <Header />
+      <Navbar />
       <Outlet />
       <ButtonGradient />
       <Footer />

@@ -5,7 +5,7 @@ import Button from "../components/Button";
 
 import GradientLight from "../components/design/GradientLight";
 import ProfileImg from "../components/ProfileImg";
-import Social from "../benefitsCards/Social";
+import Social from "../components/Social";
 
 const About = () => {
   return (
@@ -22,7 +22,7 @@ const About = () => {
             <Heading title="Hi, I'm Saqib" className="h1 ml-[2%]" />
 
             {/* about */}
-            <p className="body-2 -mt-[3rem] mb-6 ml-[2%] max-w-lg text-n-2 lg:mb-8">
+            <p className="body-2 -mt-[3rem] mb-6 ml-[2%] max-w-lg text-n-2 sm:max-w-[19rem] lg:mb-8">
               Dedicated and passionate about learning new concepts in
               programming and web development, constantly seeking to expand
               knowledge and skills while staying updated with the latest trends
@@ -40,7 +40,7 @@ const About = () => {
             </div>
 
             {/* social icons */}
-            <div className="mt-8 pl-4">
+            <div className="mt-8 max-sm:mb-9 max-sm:flex max-sm:justify-center sm:pl-4">
               <Social />
             </div>
 
@@ -50,7 +50,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="md:mx-w-5xl relative -left-[5.25rem] mx-auto max-w-[20rem] xl:mb-24">
+          <div className="sm:mx-w-5xl relative mx-auto max-w-[20rem] sm:-left-[5.25rem] xl:mb-24">
             <ProfileImg />
           </div>
         </div>

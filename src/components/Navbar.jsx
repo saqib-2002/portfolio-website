@@ -38,7 +38,7 @@ const Header = () => {
         </Link>
 
         <nav
-          className={`${openNavigation ? "flex h-full w-full" : "hidden"} fixed bottom-0 left-0 right-0 top-[5rem] bg-black bg-opacity-90 lg:static lg:mx-auto lg:flex lg:bg-transparent`}
+          className={`${openNavigation ? "flex w-full" : "hidden"} fixed bottom-0 left-0 right-0 top-[5rem] bg-black bg-opacity-90 lg:static lg:mx-auto lg:flex lg:bg-transparent`}
         >
           <div
             className={`relative ${openNavigation ? "h-screen w-full bg-black bg-opacity-90" : "bg-transparent"} m-auto flex flex-col items-center justify-center lg:flex-row`}
