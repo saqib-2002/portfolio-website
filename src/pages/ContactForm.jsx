@@ -4,6 +4,7 @@ import { Toaster, toast } from "react-hot-toast";
 import { useState } from "react";
 import Heading from "../components/Heading";
 import GradientLight from "../components/design/GradientLight";
+import { curve } from "../assets";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -98,12 +99,23 @@ const ContactForm = () => {
           }}
         />
         <div className="container relative z-3 flex flex-col items-center justify-center sm:my-12">
-          <Heading
-            title="get in touch"
-            className="h1 text-center capitalize md:max-w-md lg:max-w-2xl"
-          />
+          <div className="container relative z-1 mx-auto max-w-[56rem] text-center md:mb-20 lg:mb-[3rem]">
+            <span className="relative inline-block">
+              <Heading
+                title="get in touch"
+                className="h1 text-center capitalize md:max-w-md lg:max-w-2xl"
+              />
+              <img
+                src={curve}
+                className="absolute left-0 top-[2.75rem] w-full md:top-[2.75rem] lg:top-[4.25rem] xl:-mt-2"
+                width={624}
+                height={28}
+                alt="curve"
+              />
+            </span>
+          </div>
 
-          <p className="w-[90%] text-center sm:-mt-15 sm:w-1/2">
+          <p className="w-[90%] text-start sm:w-1/2 sm:text-center md:-mt-15">
             Feel free to get in touch with me. I am always open to discussing
             new projects, creative ideas or opportunities to be part of your
             visions.
