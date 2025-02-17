@@ -50,7 +50,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="sm:mx-w-5xl relative mx-auto max-w-[20rem] sm:-left-[5.25rem] xl:mb-24">
+          <div className="md:mx-w-5xl relative mx-auto max-w-[21rem] xl:mb-24">
             <ProfileImg />
           </div>
         </div>

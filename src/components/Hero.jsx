@@ -45,7 +45,7 @@ const Hero = () => {
             technologies.
           </p>
           <Button
-            href="https://drive.google.com/file/d/1feJ-Dgx3fOcNsO-epGeBYtEcKZqBK4or/view?usp=sharing"
+            link="https://drive.google.com/file/d/1JhZ8lHsuB2VrOAKW2ENjNlqbwQRVNt7X/view?usp=sharing"
             target="_blank"
           >
             My Resume
