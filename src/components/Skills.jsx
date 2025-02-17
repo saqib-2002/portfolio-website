@@ -17,8 +17,7 @@ const Skills = () => {
           className="text-center md:max-w-md lg:max-w-2xl"
           title="Skill Mastery Highlights"
         />
-        <div className="mb-10 gap-8 md:grid md:grid-cols-2">
-          {/* <div className="space-y-12"> */}
+        <div className="gap-8 pb-16 md:grid md:grid-cols-2">
           {skills.map((item) => (
             <div className="flex items-center" key={item.id}>
               <p className="mr-12 w-32">{item.title}</p>
@@ -27,7 +26,6 @@ const Skills = () => {
               </div>
             </div>
           ))}
-          {/* </div> */}
         </div>
       </div>
     </Section>
