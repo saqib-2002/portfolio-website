@@ -5,16 +5,13 @@ import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
 import { useRef } from "react";
 
-
-
 import { BackgroundCircles, Gradient } from "./design/Hero";
 import { heroIcons } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
 
-
 const Hero = () => {
   const parallaxRef = useRef(null);
-  
+
   return (
     <Section
       className="-mt-[5.25rem] pt-[12rem]"
@@ -65,7 +62,7 @@ const Hero = () => {
                   height={490}
                   alt="AI"
                 />
-                <ScrollParallax isAbsolutelyPositioned>
+                {/* <ScrollParallax isAbsolutelyPositioned>
                   <ul className="absolute -left-[20rem] bottom-[4rem] hidden rounded-2xl border border-n-1/10 bg-n-9/40 px-1 py-1 backdrop-blur xl:flex">
                     {heroIcons.map((icon, index) => (
                       <li className="p-5" key={index}>
@@ -73,18 +70,12 @@ const Hero = () => {
                       </li>
                     ))}
                   </ul>
-                </ScrollParallax>
-                <ScrollParallax isAbsolutelyPositioned>
-                  <Notification
-                    className="absolute -right-[23rem] bottom-[18rem] hidden w-[20rem] xl:flex"
-                    title="Alex checked Porfolio"
-                  />
-                </ScrollParallax>
+                </ScrollParallax> */}
               </div>
             </div>
             <Gradient />
           </div>
-          <div className="absolute -top-[55%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[40%]">
+          <div className="absolute -top-[20%] left-1/2 w-[100%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[40%]">
             <img
               src={heroBackground}
               className="w-full"
@@ -93,7 +84,8 @@ const Hero = () => {
               alt="hero"
             />
           </div>
-          <BackgroundCircles />
+
+          <BackgroundCircles parallaxRef={parallaxRef} />
         </div>
 
         <CompanyLogos className="relative z-10 mt-20 hidden lg:block" />
