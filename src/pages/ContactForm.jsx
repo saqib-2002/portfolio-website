@@ -1,8 +1,9 @@
-import Section from "./Section";
+import Section from "../components/Section";
 import axios from "axios";
 import { Toaster, toast } from "react-hot-toast";
 import { useState } from "react";
-import Heading from "./Heading";
+import Heading from "../components/Heading";
+import GradientLight from "../components/design/GradientLight";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -77,19 +78,38 @@ const ContactForm = () => {
         customPaddings
         className="-mt-[5.25rem] flex pt-[14rem]"
       >
-        <div className="container my-12 grid">
+        <Toaster
+          toastOptions={{
+            style: {
+              backgroundColor: "#15131D",
+              color: "#CAC6DD",
+              fontStyle: "font-code",
+            },
+            success: {
+              iconTheme: {
+                primary: "#7ADB78",
+              },
+            },
+            error: {
+              iconTheme: {
+                primary: "#757185",
+              },
+            },
+          }}
+        />
+        <div className="container relative z-3 flex flex-col items-center justify-center sm:my-12">
           <Heading
             title="get in touch"
             className="h1 text-center capitalize md:max-w-md lg:max-w-2xl"
           />
-          <div className="flex justify-center">
-            <p className="-mt-15 w-1/2 text-center">
-              Feel free to get in touch with me. I am always open to discussing
-              new projects, creative ideas or opportunities to be part of your
-              visions.
-            </p>
-          </div>
-          <form className="container relative w-1/2 space-y-4 py-12 font-code text-base">
+
+          <p className="w-[90%] text-center sm:-mt-15 sm:w-1/2">
+            Feel free to get in touch with me. I am always open to discussing
+            new projects, creative ideas or opportunities to be part of your
+            visions.
+          </p>
+
+          <form className="container relative space-y-4 pb-6 pt-12 font-code text-base sm:w-1/2 sm:py-12">
             <input
               type="text"
               placeholder="Full Name"
@@ -129,25 +149,10 @@ const ContactForm = () => {
               Send Message
             </button>
 
-            <Toaster
-              toastOptions={{
-                style: {
-                  backgroundColor: "#15131D",
-                  color: "#CAC6DD",
-                  fontStyle: "font-code",
-                },
-                success: {
-                  iconTheme: {
-                    primary: "#7ADB78",
-                  },
-                },
-                error: {
-                  iconTheme: {
-                    primary: "#757185",
-                  },
-                },
-              }}
-            />
+            {/*  gradient light*/}
+            <div className="opacity-40">
+              <GradientLight />
+            </div>
           </form>
         </div>
       </Section>

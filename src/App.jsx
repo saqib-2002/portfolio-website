@@ -12,7 +12,7 @@ import Collaboration from "./components/Collaboration.jsx";
 import Footer from "./components/Footer.jsx";
 
 import About from "./pages/About.jsx";
-import ContactForm from "./components/ContactForm.jsx";
+import ContactForm from "./pages/ContactForm.jsx";
 import Projects from "./components/Projects.jsx";
 import Error404 from "./components/Error404.jsx";
 
