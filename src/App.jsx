@@ -13,7 +13,7 @@ import Footer from "./components/Footer.jsx";
 
 import About from "./pages/About.jsx";
 import ContactForm from "./pages/ContactForm.jsx";
-import Projects from "./components/Projects.jsx";
+import Projects from "./pages/Projects.jsx";
 import Error404 from "./components/Error404.jsx";
 
 const RootLayout = () => {
@@ -40,7 +40,7 @@ const HomePage = () => {
 const ErrorPage = () => {
   return (
     <>
-      <Header />
+      <Navbar />
       <Error404 />
       <Footer />
     </>
