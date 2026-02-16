@@ -4,7 +4,6 @@ import Section from "../components/Section";
 import Button from "../components/ux/Button";
 
 import GradientLight from "../components/design/GradientLight";
-import ProfileImg from "../components/ProfileImg";
 import Social from "../components/Social";
 
 const About = () => {
@@ -51,7 +50,7 @@ const About = () => {
           </div>
 
           <div className="md:mx-w-5xl relative mx-auto max-w-[21rem] xl:mb-24">
-            <ProfileImg />
+            profile image
           </div>
         </div>
         <Skills />

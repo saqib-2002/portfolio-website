@@ -1,6 +1,6 @@
-import Button from "../components/ux/Button";
-import Capabilities from "./Capabilities";
-import ProfileImg from "../assets/hero/saqib.png";
+import Button from "../ux/Button";
+import Capabilities from "../Capabilities";
+import ProfileImg from "../../assets/hero/saqib.png";
 
 export default function Hero() {
   return (
@@ -50,7 +50,7 @@ export default function Hero() {
           />
         </div>
       </div>
-      <Capabilities className="relative z-10 mt-20 hidden lg:block" />
+      <Capabilities className="relative z-10 mt-20 lg:block" />
     </section>
   );
 }

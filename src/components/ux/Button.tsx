@@ -27,14 +27,9 @@ export default function Button({
   white = false,
   target,
 }: ButtonProps) {
-  const classes = `
-    button
-    relative inline-flex items-center justify-center
-    h-11 ${px}
-    transition-colors
-    ${white ? "text-n-8" : "text-n-1"}
-    ${className}
-  `;
+  const classes = `relative inline-flex items-center justify-center h-11 ${px} transition-colors ${
+    white ? "text-n-8" : "text-n-1"
+  } ${className}`;
 
   const motionProps = {
     whileHover: { y: -1 },
@@ -51,7 +46,7 @@ export default function Button({
         className={classes}
         {...motionProps}
       >
-        <span>{children}</span>
+        {children}
       </MotionAnchor>
     );
   }
@@ -59,14 +54,14 @@ export default function Button({
   if (to) {
     return (
       <MotionLink to={to} className={classes} {...motionProps}>
-        <span>{children}</span>
+        {children}
       </MotionLink>
     );
   }
 
   return (
     <MotionButton onClick={onClick} className={classes} {...motionProps}>
-      <span>{children}</span>
+      {children}
     </MotionButton>
   );
 }

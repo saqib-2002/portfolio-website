@@ -1,7 +1,6 @@
-import Card from "../components/Card";
+// import Card from "../components/Card";
 import Heading from "../components/Heading";
 import Section from "../components/Section";
-import { curve } from "../assets";
 import { BackgroundCircles } from "../components/design/Hero";
 import GradientLight from "../components/design/GradientLight";
 import Button from "../components/ux/Button";
@@ -22,13 +21,13 @@ const Projects = () => {
               title="Latest Project Highlight's"
               className="h1 max-sm:flex max-sm:justify-center"
             />
-            <img
-              src={curve}
+            {/* <img
+              src=
               className="absolute left-0 top-[4.25rem] w-full max-sm:left-[5rem] max-sm:top-[4.75rem] max-sm:w-1/2 xl:-mt-2"
               width={624}
               height={28}
               alt="curve"
-            />
+            /> */}
           </span>
         </div>
 
@@ -57,7 +56,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <Card />
+        {/* <Card /> */}
       </Section>
     </>
   );

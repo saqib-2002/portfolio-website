@@ -1,12 +1,12 @@
-import Card from "../components/Card";
+import ProjectsSection from "../components/layout/ProjectsSection";
 import Collaboration from "../components/Collaboration";
-import Hero from "../components/Hero";
+import Hero from "../components/layout/Hero";
 
 const HomePage = () => {
   return (
     <>
       <Hero />
-      <Card />
+      <ProjectsSection />
       {/* <Collaboration /> */}
     </>
   );

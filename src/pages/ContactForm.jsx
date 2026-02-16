@@ -4,7 +4,6 @@ import { Toaster, toast } from "react-hot-toast";
 import { useState } from "react";
 import Heading from "../components/Heading";
 import GradientLight from "../components/design/GradientLight";
-import { curve } from "../assets";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -105,13 +104,13 @@ const ContactForm = () => {
                 title="get in touch"
                 className="h1 text-center capitalize md:max-w-md lg:max-w-2xl"
               />
-              <img
+              {/* <img
                 src={curve}
                 className="absolute left-0 top-[2.75rem] w-full md:top-[2.75rem] lg:top-[4.25rem] xl:-mt-2"
                 width={624}
                 height={28}
                 alt="curve"
-              />
+              /> */}
             </span>
           </div>
 

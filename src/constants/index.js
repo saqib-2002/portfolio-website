@@ -87,7 +87,6 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-// constants.js
 export const capabilities = [
   {
     id: 1,
@@ -236,6 +235,8 @@ export const benefits = [
     iconUrl: benefitIcon1,
     imageUrl: benefitImage1,
     explore: "https://github.com/Saqib-2002/Travel-List-App--React",
+    githubStatus: "public",
+    liveUrl: null,
   },
   {
     id: "1",
@@ -246,6 +247,8 @@ export const benefits = [
     imageUrl: benefitImage2,
     light: true,
     explore: "https://github.com/Saqib-2002/Retro---Guess-the-number",
+    githubStatus: "public",
+    liveUrl: null,
   },
   {
     id: "2",
@@ -255,6 +258,8 @@ export const benefits = [
     iconUrl: benefitIcon3,
     imageUrl: benefitImage3,
     explore: "https://github.com/Saqib-2002/News-Website-internship-",
+    githubStatus: "private",
+    liveUrl: "https://news-website.example.com",
   },
   {
     id: "3",
@@ -265,6 +270,8 @@ export const benefits = [
     imageUrl: benefitImage4,
     light: true,
     explore: "https://github.com/Saqib-2002/Geolocation-API",
+    githubStatus: "public",
+    liveUrl: "", // empty if no live site
   },
   {
     id: "4",
@@ -274,6 +281,8 @@ export const benefits = [
     iconUrl: benefitIcon5,
     imageUrl: benefitImage5,
     explore: "https://github.com/Saqib-2002/The-College-Canteen-Final",
+    githubStatus: "public",
+    liveUrl: "https://college-canteen.example.com",
   },
   {
     id: "5",
@@ -283,6 +292,8 @@ export const benefits = [
     iconUrl: benefitIcon6,
     imageUrl: benefitImage6,
     explore: "https://github.com/Saqib-2002/Sliding-Login-Form",
+    githubStatus: "public",
+    liveUrl: "https://sliding-login-form.example.com",
   },
 ];
 

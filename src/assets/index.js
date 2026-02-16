@@ -21,9 +21,7 @@ import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
 import background from "./background.jpg";
 
-import curve from "./hero/curve.png";
 import saqib from "./hero/saqib.png";
-import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
@@ -113,9 +111,7 @@ export {
   sliders04,
   loading,
   background,
-  curve,
   saqib,
-  heroBackground,
   curve1,
   curve2,
   cloud,
