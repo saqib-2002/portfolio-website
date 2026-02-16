@@ -37,14 +37,7 @@ export default function ProjectsSection() {
 
         {benefits.length > 5 && (
           <div className="mt-12 flex justify-center">
-            <Button
-              link="https://github.com/saqib-2002"
-              target="_blank"
-              variant="dark"
-              className="border border-white/10 text-white"
-            >
-              Explore More Projects
-            </Button>
+            <Button to="/projects">Explore More Projects</Button>
           </div>
         )}
       </div>

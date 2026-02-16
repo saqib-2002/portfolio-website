@@ -1,4 +1,4 @@
-import { capabilities } from "../constants";
+import { capabilities } from "../../constants";
 
 const Capabilities = ({ className = "" }) => {
   return (

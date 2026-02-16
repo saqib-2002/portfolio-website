@@ -1,5 +1,5 @@
 import Button from "../ux/Button";
-import Capabilities from "../Capabilities";
+import Capabilities from "../ui/Capabilities";
 import ProfileImg from "../../assets/hero/saqib.png";
 
 export default function Hero() {
