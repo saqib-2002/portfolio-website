@@ -1,6 +1,6 @@
 import Section from "./Section";
 import { collabApps, collabContent, collabTextRight } from "../constants";
-import Button from "./Button";
+import Button from "./ux/Button";
 import { brainwaveSymbol } from "../assets";
 import { LeftCurve, RightCurve } from "./design/Collaboration"
 const Collaboration = () => {

@@ -4,7 +4,7 @@ import Section from "../components/Section";
 import { curve } from "../assets";
 import { BackgroundCircles } from "../components/design/Hero";
 import GradientLight from "../components/design/GradientLight";
-import Button from "../components/Button";
+import Button from "../components/ux/Button";
 
 const Projects = () => {
   return (

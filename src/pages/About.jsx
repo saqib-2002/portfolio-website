@@ -1,7 +1,7 @@
 import Skills from "../components/Skills";
 import Heading from "../components/Heading";
 import Section from "../components/Section";
-import Button from "../components/Button";
+import Button from "../components/ux/Button";
 
 import GradientLight from "../components/design/GradientLight";
 import ProfileImg from "../components/ProfileImg";

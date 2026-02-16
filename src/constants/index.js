@@ -33,10 +33,6 @@ import {
   notification2,
   notification3,
   notification4,
-  techhub,
-  its,
-  microsoft,
-  google,
   plusSquare,
   roadmap1,
   roadmap2,
@@ -91,11 +87,28 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [
-  { title: techhub, text: "TechHub Technology" },
-  { title: its, text: "ITS College" },
-  // { title: google, text: "Google" },
-  // { title: microsoft, text: "Microsoft" },
+// constants.js
+export const capabilities = [
+  {
+    id: 1,
+    title: "Product-Focused UI",
+    text: "Modern, accessible interfaces designed for usability and conversion",
+  },
+  {
+    id: 2,
+    title: "Scalable Systems",
+    text: "Backend architectures designed to scale using Node.js and Express",
+  },
+  {
+    id: 3,
+    title: "High Performance",
+    text: "Fast, efficient applications optimized for real-world usage",
+  },
+  {
+    id: 4,
+    title: "Long-Term Maintainability",
+    text: "Type-safe, predictable codebases using TypeScript and Redux",
+  },
 ];
 
 export const roadmap = [

@@ -1,5 +1,5 @@
-import Social from "./Social";
-import Section from "./Section";
+import Social from "../Social";
+import Section from "../Section";
 
 const Footer = () => {
   return (

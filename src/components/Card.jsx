@@ -4,7 +4,7 @@ import { benefits } from "../constants";
 import Arrow from "../assets/svg/Arrow";
 import GradientLight from "./design/GradientLight";
 import ClipPath from "../assets/svg/ClipPath";
-import Button from "./Button";
+import Button from "../components/ux/Button";
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
 import { Link } from "react-router-dom";
 
@@ -37,7 +37,7 @@ const BenefitItem = ({ item }) => {
           </Link>
           <Arrow />
         </div>
-      </div> 
+      </div>
       {item.light && <GradientLight />}
       <div
         className="absolute inset-0.5 bg-n-8"

@@ -3,11 +3,11 @@ import { useState } from "react";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
 // import { brainwave } from "../assets";
-import { navigation } from "../constants";
-import Button from "./Button";
+import { navigation } from "../../constants";
+import Button from "../ux/Button";
 // import Menu from "../assets/svg/MenuSvg"
-import { HamburgerMenu } from "./design/Header";
-import MenuSvg from "../assets/svg/MenuSvg";
+import { HamburgerMenu } from "../design/Header";
+import MenuSvg from "../../assets/svg/MenuSvg";
 
 const Header = () => {
   const pathName = useLocation();
