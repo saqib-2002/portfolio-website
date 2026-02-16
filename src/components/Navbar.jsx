@@ -13,6 +13,7 @@ const Header = () => {
   const pathName = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
 
+  // toggle navigation menu
   const toggleNavigation = () => {
     if (openNavigation) {
       setOpenNavigation(false);
@@ -22,12 +23,12 @@ const Header = () => {
       disablePageScroll();
     }
   };
+
   const handleClick = () => {
     if (!openNavigation) return;
     enablePageScroll();
     setOpenNavigation(false);
   };
-  // toggleNavigation();
   return (
     <div
       className={`fixed left-0 top-0 z-50 w-full border-b border-n-6 backdrop-blur-sm lg:bg-n-8/90 lg:backdrop-blur-sm ${openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"}`}
@@ -65,7 +66,7 @@ const Header = () => {
         </NavLink>
         <Button
           className="hidden lg:flex"
-          href="https://github.com/Saqib-2002"
+          href="https://github.com/saqib-2002"
           target="_blank"
         >
           GitHub

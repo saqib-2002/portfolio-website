@@ -2,78 +2,51 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
-import ButtonGradient from "./assets/svg/ButtonGradient.jsx";
-import Card from "./components/Card.jsx";
-// import Button from "./components/Button.jsx";
-import Navbar from "./components/Navbar.jsx";
-import Hero from "./components/Hero.jsx";
-import Collaboration from "./components/Collaboration.jsx";
-// import Roadmap from "./components/Roadmap.jsx";
-import Footer from "./components/Footer.jsx";
+import ButtonGradient from "./assets/svg/ButtonGradient";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
-import About from "./pages/About.jsx";
-import ContactForm from "./pages/ContactForm.jsx";
-import Projects from "./pages/Projects.jsx";
-import Error404 from "./components/Error404.jsx";
+import HomePage from "./pages/HomePage";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import ContactForm from "./pages/ContactForm";
+import Error404 from "./components/Error404";
+import ScrollToTop from "./components/ux/ScrollToTop";
+/* layouts */
+const RootLayout = () => (
+  <>
+    <Navbar />
+    <ScrollToTop />
+    <Outlet />
+    <ButtonGradient />
+    <Footer />
+  </>
+);
 
-const RootLayout = () => {
-  return (
-    <>
-      <Navbar />
-      <Outlet />
-      <ButtonGradient />
-      <Footer />
-    </>
-  );
-};
+const ErrorPage = () => (
+  <>
+    <Navbar />
+    <Error404 />
+    <Footer />
+  </>
+);
 
-const HomePage = () => {
-  return (
-    <>
-      <Hero />
-      <Card />
-      <Collaboration />
-    </>
-  );
-};
-
-const ErrorPage = () => {
-  return (
-    <>
-      <Navbar />
-      <Error404 />
-      <Footer />
-    </>
-  );
-};
-
+/* router */
 const router = createBrowserRouter([
   {
-    path: "/",
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
-      {
-        path: "/",
-        element: <HomePage />,
-      },
-      {
-        path: "about",
-        element: <About />,
-      },
-      {
-        path: "contact",
-        element: <ContactForm />,
-      },
-      {
-        path: "projects",
-        element: <Projects />,
-      },
+      { index: true, element: <HomePage /> },
+      { path: "about", element: <About /> },
+      { path: "projects", element: <Projects /> },
+      { path: "contact", element: <ContactForm /> },
     ],
   },
 ]);
 
-const App = () => {
+/* app */
+export default function App() {
   return (
     <>
       <RouterProvider router={router} />
@@ -81,6 +54,4 @@ const App = () => {
       <SpeedInsights />
     </>
   );
-};
-
-export default App;
+}
