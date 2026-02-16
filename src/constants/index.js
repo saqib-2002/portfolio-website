@@ -377,3 +377,57 @@ export const skills = [
     currentLevel: 3,
   },
 ];
+
+// Core developer skills
+export const coreSkills = [
+  {
+    id: 1,
+    title: "React.js",
+    text: "Building responsive and dynamic SPAs with hooks and state management.",
+  },
+  {
+    id: 2,
+    title: "TypeScript",
+    text: "Strongly typed, scalable, and maintainable frontend code.",
+  },
+  {
+    id: 3,
+    title: "Tailwind CSS",
+    text: "Modern, responsive, and utility-first UI design.",
+  },
+  {
+    id: 4,
+    title: "Node.js & Express",
+    text: "Backend APIs and server-side logic for full-stack apps.",
+  },
+  {
+    id: 5,
+    title: "MongoDB / PostgreSQL",
+    text: "Database design, querying, and optimization.",
+  },
+  {
+    id: 6,
+    title: "Next.js",
+    text: "Server-side rendering and static site generation for React apps.",
+  },
+  {
+    id: 7,
+    title: "Framer Motion",
+    text: "Smooth animations and interactive UI components.",
+  },
+];
+
+// Dev tools/software
+export const devTools = [
+  { id: 1, title: "MongoDB", icon: mongo },
+  { id: 2, title: "Node.js", icon: nodejs },
+  { id: 3, title: "React.js", icon: reactjs },
+  { id: 4, title: "Next.js", icon: nextjs },
+  { id: 5, title: "Machine Learning", icon: ml },
+  { id: 6, title: "JavaScript", icon: js },
+  { id: 7, title: "Cloud Services", icon: cloud },
+  { id: 8, title: "Tailwind CSS", icon: tailwind },
+];
+
+export const skillsDescription =
+  "Here are my core development skills and the software/tools I am proficient with, enabling me to build modern web applications efficiently.";

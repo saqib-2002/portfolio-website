@@ -17,7 +17,15 @@ export default function ProjectsSection() {
   const visibleProjects = benefits.slice(0, 5);
 
   return (
-    <section id="projects">
+    <section id="projects" className="relative py-20">
+      <div
+        className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-gradient-to-br from-indigo-500/30 via-purple-500/20 to-pink-500/30 blur-2xl"
+        style={{
+          width: "100%",
+          height: "50%",
+          opacity: "20%",
+        }}
+      />
       <div className="container">
         <div className="mx-auto mb-16 max-w-2xl text-center">
           <h2 className="mb-3 text-3xl font-bold text-n-1">

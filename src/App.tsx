@@ -2,10 +2,9 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
-import ButtonGradient from "./assets/svg/ButtonGradient";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
-
+import ButtonGradient from "./assets/svg/ButtonGradient";
 import HomePage from "./pages/HomePage";
 import About from "./pages/About";
 import Projects from "./pages/Projects";

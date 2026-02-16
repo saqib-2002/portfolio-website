@@ -1,14 +1,14 @@
 import ProjectsSection from "../components/layout/ProjectsSection";
-import Collaboration from "../components/Collaboration";
 import Hero from "../components/layout/Hero";
+import SkillsShowcase from "../components/SkillsShowcase";
 
 const HomePage = () => {
   return (
-    <>
+    <section className="space-y-16">
       <Hero />
       <ProjectsSection />
-      {/* <Collaboration /> */}
-    </>
+      <SkillsShowcase />
+    </section>
   );
 };
 

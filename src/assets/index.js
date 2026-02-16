@@ -25,13 +25,13 @@ import saqib from "./hero/saqib.png";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
-import cloud from "./collaboration/tailwind.svg";
-import ml from "./collaboration/reactjs.svg";
-import js from "./collaboration/nodejs.svg";
-import reactjs from "./collaboration/nextjs.svg";
-import nextjs from "./collaboration/cloud.svg";
-import nodejs from "./collaboration/js.svg";
-import tailwind from "./collaboration/ml.svg";
+import tailwind from "./collaboration/tailwind.svg";
+import reactjs from "./collaboration/reactjs.svg";
+import nodejs from "./collaboration/nodejs.svg";
+import nextjs from "./collaboration/nextjs.svg";
+import cloud from "./collaboration/cloud.svg";
+import js from "./collaboration/js.svg";
+import ml from "./collaboration/ml.svg";
 import mongo from "./collaboration/mongo.svg";
 
 import service1 from "./services/service-1.png";
@@ -79,10 +79,10 @@ import facebook from "./socials/facebook.svg";
 import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
-import techhub from "./services/techhub_logo.png"
+import techhub from "./services/techhub_logo.png";
 import its from "./services/its.png";
-import microsoft from "./services/microsoft.png"
-import google from "./services/google.png"
+import microsoft from "./services/microsoft.png";
+import google from "./services/google.png";
 
 export {
   brainwave,

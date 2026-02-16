@@ -29,8 +29,6 @@ export default function Hero() {
             <Button
               href="https://drive.google.com/file/d/1JhZ8lHsuB2VrOAKW2ENjNlqbwQRVNt7X/view"
               target="_blank"
-              white
-              className="border border-white/10 text-white"
             >
               Download Resume
             </Button>
