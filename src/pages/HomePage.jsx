@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <section className="space-y-16">
       <Hero />
-      <ProjectsSection />
+      <ProjectsSection showAll={false} />
       <SkillsShowcase />
     </section>
   );

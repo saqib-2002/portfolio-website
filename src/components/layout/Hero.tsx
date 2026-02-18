@@ -1,6 +1,6 @@
 import Button from "../ux/Button";
 import Capabilities from "../ui/Capabilities";
-import ProfileImg from "../../assets/hero/saqib.png";
+import ProfileImg from "../ui/ProfileImg";
 
 export default function Hero() {
   return (
@@ -34,19 +34,7 @@ export default function Hero() {
             </Button>
           </div>
         </div>
-
-        {/* RIGHT CONTENT */}
-        <div className="relative mx-auto h-64 w-64">
-          {/* glow */}
-          <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-indigo-500/30 via-purple-500/20 to-pink-500/30 blur-2xl" />
-
-          {/* image */}
-          <img
-            src={ProfileImg}
-            alt="Saqib profile"
-            className="relative z-10 h-full w-full rounded-2xl object-cover"
-          />
-        </div>
+        <ProfileImg />
       </div>
       <Capabilities className="relative z-10 mt-20 lg:block" />
     </section>

@@ -1,173 +1,133 @@
-import Section from "../components/Section";
 import axios from "axios";
-import { Toaster, toast } from "react-hot-toast";
 import { useState } from "react";
+import { Toaster, toast } from "react-hot-toast";
 import Heading from "../components/Heading";
-import GradientLight from "../components/design/GradientLight";
-
+import Button from "../components/ux/Button";
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
   const [message, setMessage] = useState("");
-
-  const ids = {
-    service: import.meta.env.VITE_SERVICE_ID,
-    template: import.meta.env.VITE_TEMPLATE_ID,
-    user: import.meta.env.VITE_USER_ID,
-  };
-
-  const data = {
-    service_id: ids.service,
-    template_id: ids.template,
-    user_id: ids.user,
-    template_params: {
-      from_name: name,
-      to_name: "Saqib",
-      from_email: email,
-      from_num: number,
-      message: message,
-    },
-  };
+  const [loading, setLoading] = useState(false);
 
   const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    if (!name.length) {
-      return toast.error("Enter Name");
+    if (!name || name.length < 3) {
+      return toast.error("Please enter your full name");
     }
-    if (name.length < 3) {
-      return toast.error("Enter Fullname");
+    if (!email || !emailRegex.test(email)) {
+      return toast.error("Please enter a valid email");
     }
-    if (!email.length) {
-      return toast.error("Enter Email");
+    if (!number) {
+      return toast.error("Please enter your phone number");
     }
-    if (!emailRegex.test(email)) {
-      return toast.error("Email is not valid");
+    if (!message) {
+      return toast.error("Please write a message");
     }
-    if (!number.length) {
-      return toast.error("Enter Phone Number");
-    }
-    if (!message.length) {
-      return toast.error("Enter your Message");
-    }
-    axios
-      .post("https://api.emailjs.com/api/v1.0/email/send", data)
-      .then((res) => {
-        toast.success("Sent Successfully");
-        console.log("Success - ", res.data);
-        setName("");
-        setEmail("");
-        setNumber("");
-        setMessage("");
-      })
-      .catch((err) => {
-        // console.log("Failed - ", err);
-        toast.error("Bad Request! Try Again");
+
+    setLoading(true);
+
+    try {
+      await axios.post("https://api.emailjs.com/api/v1.0/email/send", {
+        service_id: import.meta.env.VITE_SERVICE_ID,
+        template_id: import.meta.env.VITE_TEMPLATE_ID,
+        user_id: import.meta.env.VITE_USER_ID,
+        template_params: {
+          from_name: name,
+          from_email: email,
+          from_num: number,
+          message,
+          to_name: "Saqib",
+        },
       });
+
+      toast.success("Message sent successfully 🚀");
+      setName("");
+      setEmail("");
+      setNumber("");
+      setMessage("");
+    } catch {
+      toast.error("Something went wrong. Try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
-    <>
-      <Section
-        id="features"
-        crosses
-        crossesOffset="lg:translate-y-[5.25rem]"
-        customPaddings
-        className="-mt-[5.25rem] flex pt-[14rem]"
-      >
-        <Toaster
-          toastOptions={{
-            style: {
-              backgroundColor: "#15131D",
-              color: "#CAC6DD",
-              fontStyle: "font-code",
-            },
-            success: {
-              iconTheme: {
-                primary: "#7ADB78",
-              },
-            },
-            error: {
-              iconTheme: {
-                primary: "#757185",
-              },
-            },
-          }}
-        />
-        <div className="container relative z-3 flex flex-col items-center justify-center sm:my-12">
-          <div className="container relative z-1 mx-auto max-w-[56rem] text-center md:mb-20 lg:mb-[3rem]">
-            <span className="relative inline-block">
-              <Heading
-                title="get in touch"
-                className="h1 text-center capitalize md:max-w-md lg:max-w-2xl"
-              />
-              {/* <img
-                src={curve}
-                className="absolute left-0 top-[2.75rem] w-full md:top-[2.75rem] lg:top-[4.25rem] xl:-mt-2"
-                width={624}
-                height={28}
-                alt="curve"
-              /> */}
-            </span>
-          </div>
+    <section id="contact" className="relative overflow-hidden py-20 sm:py-28">
+      <Toaster
+        toastOptions={{
+          style: {
+            background: "#15131D",
+            color: "#CAC6DD",
+          },
+        }}
+      />
 
-          <p className="w-[90%] text-start sm:w-1/2 sm:text-center md:-mt-15">
-            Feel free to get in touch with me. I am always open to discussing
-            new projects, creative ideas or opportunities to be part of your
-            visions.
+      <div className="container mx-auto px-6">
+        {/* heading */}
+        <div className="mx-auto mb-12 max-w-2xl text-center">
+          <Heading title="Get in touch" className="capitalize" />
+          <p className="mt-4 text-n-2">
+            Have a project in mind or just want to say hi? I’m always open to
+            new ideas and collaborations.
           </p>
-
-          <form className="container relative space-y-4 pb-6 pt-12 font-code text-base sm:w-1/2 sm:py-12">
-            <input
-              type="text"
-              placeholder="Full Name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="w-full rounded-md border border-n-7 bg-n-7 px-4 py-2 text-n-2 focus:outline-none"
-            />
-            <input
-              type="email"
-              placeholder="Email Address"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="w-full rounded-md border border-n-7 bg-n-7 px-4 py-2 text-n-2 focus:outline-none"
-            />
-            <div className="relative">
-              <input
-                type="tel"
-                maxLength={14}
-                placeholder="(+Country Code) Phone Number"
-                value={number}
-                onChange={(e) => setNumber(e.target.value)}
-                className="w-full rounded-md border border-n-7 bg-n-7 px-4 py-2 text-n-2 focus:outline-none"
-              />
-            </div>
-            <textarea
-              placeholder="Write your message here..."
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              rows="4"
-              className="w-full resize-none rounded-md border border-n-7 bg-n-7 px-4 py-2 text-n-2 focus:outline-none"
-            />
-            <button
-              type="submit"
-              className="flex w-full items-center justify-center rounded-md bg-n-5 py-2 text-white transition hover:bg-n-6"
-              onClick={sendEmail}
-            >
-              Send Message
-            </button>
-
-            {/*  gradient light*/}
-            <div className="opacity-40">
-              <GradientLight />
-            </div>
-          </form>
         </div>
-      </Section>
-    </>
+
+        {/* form */}
+        <form
+          onSubmit={sendEmail}
+          className="relative mx-auto max-w-xl space-y-5 rounded-2xl border border-n-7 bg-n-8/70 p-8 backdrop-blur"
+        >
+          {/* ambient glow */}
+          <div className="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-br from-indigo-500/20 via-purple-500/10 to-pink-500/20 blur-2xl" />
+
+          <input
+            type="text"
+            placeholder="Full name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full rounded-md border border-n-7 bg-n-7 px-4 py-3 text-n-2 focus:outline-none focus:ring-1 focus:ring-indigo-500"
+          />
+
+          <input
+            type="email"
+            placeholder="Email address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="w-full rounded-md border border-n-7 bg-n-7 px-4 py-3 text-n-2 focus:outline-none focus:ring-1 focus:ring-indigo-500"
+          />
+
+          <input
+            type="tel"
+            placeholder="Phone number"
+            value={number}
+            onChange={(e) => setNumber(e.target.value)}
+            className="w-full rounded-md border border-n-7 bg-n-7 px-4 py-3 text-n-2 focus:outline-none focus:ring-1 focus:ring-indigo-500"
+          />
+
+          <textarea
+            rows={4}
+            placeholder="Your message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            className="w-full resize-none rounded-md border border-n-7 bg-n-7 px-4 py-3 text-n-2 focus:outline-none focus:ring-1 focus:ring-indigo-500"
+          />
+
+          <Button
+            type="submit"
+            disabled={loading}
+            className="flex w-full items-center justify-center py-3 font-medium text-white transition disabled:opacity-50"
+          >
+            {loading ? "Sending..." : "Send Message"}
+          </Button>
+        </form>
+      </div>
+    </section>
   );
 };
+
 export default ContactForm;

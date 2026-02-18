@@ -1,61 +1,54 @@
-import Skills from "../components/Skills";
 import Heading from "../components/Heading";
-import Section from "../components/Section";
 import Button from "../components/ux/Button";
-
-import GradientLight from "../components/design/GradientLight";
 import Social from "../components/Social";
+import ProfileImage from "../components/ui/ProfileImg";
+import Skills from "../components/Skills";
 
 const About = () => {
   return (
-    <>
-      <Section
-        id="features"
-        crosses
-        crossesOffset="lg:translate-y-[5.25rem]"
-        customPaddings
-        className="-mt-[5.25rem] pt-[14rem]"
-      >
-        <div className="md:flex">
-          <div className="container relative z-3">
-            <Heading title="Hi, I'm Saqib" className="h1 ml-[2%]" />
+    <section id="about" className="relative overflow-hidden py-20 sm:py-28">
+      <div className="container mx-auto px-6">
+        {/* top section */}
+        <div className="grid items-center gap-16 md:grid-cols-2">
+          {/* left content */}
+          <div className="space-y-8">
+            <Heading title="Hi, I’m Saqib 👋" className="text-left" />
 
-            {/* about */}
-            <p className="body-2 -mt-[3rem] mb-6 ml-[2%] max-w-lg text-n-2 sm:max-w-[19rem] lg:mb-8">
-              Dedicated and passionate about learning new concepts in
-              programming and web development, constantly seeking to expand
-              knowledge and skills while staying updated with the latest trends
-              and technologies.
+            <p className="max-w-xl text-lg leading-relaxed text-n-2">
+              I’m a passionate web developer focused on building modern,
+              scalable, and user-centric digital experiences. I love learning
+              new technologies, refining my craft, and staying ahead of the
+              curve in frontend and full-stack development.
             </p>
 
-            {/* button */}
-            <div className="ml-[2%]">
+            {/* actions */}
+            <div className="flex flex-wrap items-center gap-6">
               <Button
                 link="https://drive.google.com/file/d/1JhZ8lHsuB2VrOAKW2ENjNlqbwQRVNt7X/view?usp=sharing"
                 target="_blank"
               >
                 View Resume
               </Button>
-            </div>
 
-            {/* social icons */}
-            <div className="mt-8 max-sm:mb-9 max-sm:flex max-sm:justify-center sm:pl-4">
               <Social />
             </div>
-
-            {/*  gradient light*/}
-            <div className="opacity-40">
-              <GradientLight />
-            </div>
           </div>
 
-          <div className="md:mx-w-5xl relative mx-auto max-w-[21rem] xl:mb-24">
-            profile image
+          {/* right visual */}
+          <div className="relative flex justify-center md:justify-end">
+            {/* gradient glow */}
+            <div className="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-br from-indigo-500/30 via-purple-500/20 to-pink-500/30 blur-2xl" />
+
+            <ProfileImage />
           </div>
         </div>
-        <Skills />
-      </Section>
-    </>
+
+        {/* skills */}
+        <div className="mt-24">
+          <Skills />
+        </div>
+      </div>
+    </section>
   );
 };
 

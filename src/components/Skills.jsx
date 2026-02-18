@@ -1,17 +1,10 @@
-import Section from "./Section";
 import Heading from "./Heading";
 import LevelBar from "./design/LevelBar";
 import { skills } from "../constants";
 
 const Skills = () => {
   return (
-    <Section
-      id="features"
-      crosses
-      crossesOffset="lg:translate-y-[5.25rem]"
-      customPaddings
-      className="-mt-[5.25rem] pt-[12rem]"
-    >
+    <section id="features">
       <div className="realtive container z-2">
         <Heading
           className="text-center md:max-w-md lg:max-w-2xl"
@@ -28,7 +21,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
-    </Section>
+    </section>
   );
 };
 

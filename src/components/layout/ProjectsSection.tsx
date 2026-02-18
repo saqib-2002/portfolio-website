@@ -12,9 +12,13 @@ interface Project {
   liveUrl?: string;
   githubStatus?: "public" | "private";
 }
-
-export default function ProjectsSection() {
-  const visibleProjects = benefits.slice(0, 5);
+interface ProjectsSectionProps {
+  showAll?: boolean;
+}
+export default function ProjectsSection({
+  showAll = false,
+}: ProjectsSectionProps) {
+  const visibleProjects = showAll ? benefits : benefits.slice(0, 5);
 
   return (
     <section id="projects" className="relative py-20">
@@ -43,7 +47,7 @@ export default function ProjectsSection() {
           ))}
         </div>
 
-        {benefits.length > 5 && (
+        {!showAll && benefits.length > 5 && (
           <div className="mt-12 flex justify-center">
             <Button to="/projects">Explore More Projects</Button>
           </div>

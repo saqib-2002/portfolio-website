@@ -1,64 +1,54 @@
-// import Card from "../components/Card";
 import Heading from "../components/Heading";
-import Section from "../components/Section";
-import { BackgroundCircles } from "../components/design/Hero";
-import GradientLight from "../components/design/GradientLight";
 import Button from "../components/ux/Button";
+import ProjectsSection from "../components/layout/ProjectsSection";
 
 const Projects = () => {
   return (
-    <>
-      <Section
-        id="features"
-        crosses
-        crossesOffset="lg:translate-y-[5.25rem]"
-        customPaddings
-        className="-mt-[5.25rem] pt-[14rem]"
-      >
-        <div className="container relative z-1 mx-auto mb-[0.25rem] max-w-[56rem] text-center md:mb-[5.25rem]">
-          <span className="relative inline-block">
-            <Heading
-              title="Latest Project Highlight's"
-              className="h1 max-sm:flex max-sm:justify-center"
-            />
-            {/* <img
-              src=
-              className="absolute left-0 top-[4.25rem] w-full max-sm:left-[5rem] max-sm:top-[4.75rem] max-sm:w-1/2 xl:-mt-2"
-              width={624}
-              height={28}
-              alt="curve"
-            /> */}
-          </span>
-        </div>
-
-        <Heading
-          title="Blog Website"
-          className="h4 ml-[2rem] md:ml-[5.25rem]"
-        />
-
-        <div className="container relative max-w-[56rem] translate-y-[0.25rem] max-sm:opacity-40">
-          <GradientLight />
-          <BackgroundCircles />
-        </div>
-
-        <div className="container sm:flex sm:gap-4">
-          <p className="body-2 mb-6 ml-[2%] max-w-2xl text-n-2 lg:mb-8">
-            A dynamic blog website built with the MERN stack, combining MongoDB,
-            Express, React, and Node.js for seamless functionality and efficient
-            data handling. The platform features Firebase authentication for
-            secure login and account management. Users can easily create, edit,
-            and manage blogs, all within a responsive, modern, and user-friendly
-            interface designed to enhance the overall experience.
+    <section id="projects" className="relative overflow-hidden py-20 sm:py-28">
+      <div className="container mx-auto px-6">
+        {/* section heading */}
+        <div className="mx-auto mb-16 max-w-2xl text-center">
+          <Heading title="Latest Project Highlights" />
+          <p className="mt-4 text-n-2">
+            Real-world projects focused on performance, scalability, and
+            thoughtful user experience.
           </p>
-          <div className="relative z-1 mb-[2rem] flex justify-between sm:left-[25%] md:flex-col md:justify-center md:space-y-8">
-            <Button link="http://google.com">Live Demo</Button>
-            <Button link="/">Github Repositry</Button>
+        </div>
+
+        {/* project card */}
+        <div className="relative mx-auto max-w-4xl rounded-2xl border border-n-7 bg-n-8/70 p-8 backdrop-blur">
+          {/* ambient glow */}
+          <div className="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-br from-indigo-500/20 via-purple-500/10 to-pink-500/20 blur-2xl" />
+
+          <div className="grid gap-10 md:grid-cols-2">
+            {/* left content */}
+            <div className="space-y-4">
+              <Heading title="Blog Website" className="text-left text-2xl" />
+
+              <p className="leading-relaxed text-n-2">
+                A dynamic blog platform built using the MERN stack — MongoDB,
+                Express, React, and Node.js — focused on performance,
+                scalability, and clean UX. It includes Firebase authentication
+                for secure access and allows users to create, edit, and manage
+                blogs seamlessly within a modern, responsive interface.
+              </p>
+            </div>
+
+            {/* actions */}
+            <div className="flex flex-col justify-center gap-6">
+              <Button link="http://google.com" target="_blank">
+                Live Demo
+              </Button>
+              <Button link="/" target="_blank" variant="secondary">
+                GitHub Repository
+              </Button>
+            </div>
           </div>
         </div>
-
-        {/* <Card /> */}
-      </Section>
-    </>
+      </div>
+      <ProjectsSection showAll={true} />
+    </section>
   );
 };
+
 export default Projects;
