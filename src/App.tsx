@@ -10,6 +10,7 @@ import Projects from "./pages/Projects";
 import ContactForm from "./pages/ContactForm";
 import Error404 from "./components/Error404";
 import ScrollToTop from "./components/ux/ScrollToTop";
+import WhatIDo from "./pages/WhatIDo";
 /* layouts */
 const RootLayout = () => (
   <>
@@ -36,6 +37,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: "about", element: <About /> },
+      { path: "what-i-do", element: <WhatIDo /> },
       { path: "projects", element: <Projects /> },
       { path: "contact", element: <ContactForm /> },
     ],

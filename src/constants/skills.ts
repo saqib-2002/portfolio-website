@@ -131,3 +131,6 @@ export const coreSkills: CoreSkill[] = [
 
 export const skillsDescription: string =
   "The modern web stack I use to turn ideas into scalable, production-ready applications, built with performance, maintainability, and reliability in mind.";
+
+
+  

@@ -1,14 +1,14 @@
-import { FC } from "react";
-
 interface HeadingProps {
   title?: string;
+  text?: string;
   className?: string;
 }
 
-const Heading: FC<HeadingProps> = ({ className = "", title }) => {
+const Heading = ({ title, text, className = "" }: HeadingProps) => {
   return (
-    <div className={`${className} mx-auto mb-12 max-w-[50rem] lg:mb-20`}>
-      {title && <h2 className="h2">{title}</h2>}
+    <div className={`${className} mx-auto mb-8 max-w-[50rem] lg:mb-12`}>
+      {title && <h2 className="h2 text-white">{title}</h2>}
+      {text && <p className="mt-4 text-base text-n-3 sm:text-lg">{text}</p>}
     </div>
   );
 };
