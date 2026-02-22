@@ -30,14 +30,7 @@ import {
   file02,
   homeSmile,
   instagram,
-  notification2,
-  notification3,
-  notification4,
   plusSquare,
-  roadmap1,
-  roadmap2,
-  roadmap3,
-  roadmap4,
   searchMd,
   telegram,
   twitter,
@@ -85,7 +78,6 @@ export const navigation = [
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
-export const notificationImages = [notification4, notification3, notification2];
 
 export const capabilities = [
   {
@@ -107,42 +99,6 @@ export const capabilities = [
     id: 4,
     title: "Long-Term Maintainability",
     text: "Type-safe, predictable codebases using TypeScript and Redux",
-  },
-];
-
-export const roadmap = [
-  {
-    id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2023",
-    status: "done",
-    imageUrl: roadmap1,
-    colorful: true,
-  },
-  {
-    id: "1",
-    title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
-    date: "May 2023",
-    status: "progress",
-    imageUrl: roadmap2,
-  },
-  {
-    id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    date: "May 2023",
-    status: "done",
-    imageUrl: roadmap3,
-  },
-  {
-    id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
-    status: "progress",
-    imageUrl: roadmap4,
   },
 ];
 
@@ -330,92 +286,7 @@ export const socials = [
   },
 ];
 
-export const skills = [
-  {
-    id: 1,
-    title: "HTML",
-    currentLevel: 5,
-  },
-  {
-    id: 2,
-    title: "CSS",
-    currentLevel: 4,
-  },
-  {
-    id: 3,
-    title: "JavaScript",
-    currentLevel: 4,
-  },
-  {
-    id: 4,
-    title: "React JS",
-    currentLevel: 4,
-  },
-  {
-    id: 5,
-    title: "Node JS",
-    currentLevel: 2,
-  },
-  {
-    id: 6,
-    title: "Express JS",
-    currentLevel: 3,
-  },
-  {
-    id: 7,
-    title: "MongoDB",
-    currentLevel: 3,
-  },
-  {
-    id: 8,
-    title: "C++",
-    currentLevel: 4,
-  },
-  {
-    id: 9,
-    title: "SQL",
-    currentLevel: 3,
-  },
-];
-
 // Core developer skills
-export const coreSkills = [
-  {
-    id: 1,
-    title: "React.js",
-    text: "Building responsive and dynamic SPAs with hooks and state management.",
-  },
-  {
-    id: 2,
-    title: "TypeScript",
-    text: "Strongly typed, scalable, and maintainable frontend code.",
-  },
-  {
-    id: 3,
-    title: "Tailwind CSS",
-    text: "Modern, responsive, and utility-first UI design.",
-  },
-  {
-    id: 4,
-    title: "Node.js & Express",
-    text: "Backend APIs and server-side logic for full-stack apps.",
-  },
-  {
-    id: 5,
-    title: "MongoDB / PostgreSQL",
-    text: "Database design, querying, and optimization.",
-  },
-  {
-    id: 6,
-    title: "Next.js",
-    text: "Server-side rendering and static site generation for React apps.",
-  },
-  {
-    id: 7,
-    title: "Framer Motion",
-    text: "Smooth animations and interactive UI components.",
-  },
-];
 
 // Dev tools/software
 export const devTools = [
@@ -428,6 +299,3 @@ export const devTools = [
   { id: 7, title: "Cloud Services", icon: cloud },
   { id: 8, title: "Tailwind CSS", icon: tailwind },
 ];
-
-export const skillsDescription =
-  "Here are my core development skills and the software/tools I am proficient with, enabling me to build modern web applications efficiently.";

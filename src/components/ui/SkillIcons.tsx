@@ -1,43 +1,51 @@
 import { devTools } from "../../constants";
+
 const SkillIcons = () => {
   return (
     <>
       {devTools.map((tool, index) => (
         <div
           key={tool.id}
-          className="group relative flex flex-col items-center justify-center rounded-full border border-white/20 bg-white/10 p-4 shadow-md backdrop-blur-md transition-transform duration-500 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl sm:p-5"
+          className="group relative flex flex-col items-center justify-center rounded-full border border-white/15 bg-white/10 p-4 backdrop-blur-md transition-all duration-300 ease-out hover:border-white/30 hover:bg-white/15"
           style={{
-            animation: `fadeUpCard 0.5s ease forwards`,
-            animationDelay: `${index * 0.1}s`,
+            animation: "fadeUpCard 0.4s ease forwards",
+            animationDelay: `${index * 0.08}s`,
             opacity: 0,
           }}
         >
-          {/* Glow appears only on hover */}
-          <div className="absolute inset-0 -z-10 rounded-full bg-gradient-to-tr from-purple-400 via-pink-400 to-indigo-500 opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-25"></div>
+          {/* Subtle glow */}
+          <div className="pointer-events-none absolute inset-0 -z-10 rounded-2xl bg-gradient-to-tr from-indigo-500/30 via-purple-500/20 to-pink-500/30 opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-30" />
 
-          {/* Circular icon container */}
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-n-7 shadow-inner sm:h-14 sm:w-14">
+          {/* Icon */}
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-n-7 shadow-inner transition-transform duration-300 group-hover:scale-110 sm:h-10 sm:w-10">
             <img
               src={tool.icon}
               alt={tool.title}
-              className="h-10 w-10 rounded-full object-cover sm:h-12 sm:w-12"
+              className="h-8 w-8 object-contain sm:h-8 sm:w-8"
             />
           </div>
 
-          <span className="sm:text-md mt-2 text-center text-sm font-semibold text-white">
+          {/* Label */}
+          <span className="mt-2 text-center text-xs font-medium tracking-wide text-n-2 sm:text-sm">
             {tool.title}
           </span>
         </div>
       ))}
 
-      {/* Keyframes for the outer card animation */}
+      {/* Keyframes */}
       <style>
         {`
-      @keyframes fadeUpCard {
-        0% { opacity: 0; transform: translateY(20px) scale(0.9); }
-        100% { opacity: 1; transform: translateY(0) scale(1); }
-      }
-    `}
+          @keyframes fadeUpCard {
+            from {
+              opacity: 0;
+              transform: translateY(12px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+        `}
       </style>
     </>
   );

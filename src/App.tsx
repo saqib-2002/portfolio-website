@@ -4,7 +4,6 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
-import ButtonGradient from "./assets/svg/ButtonGradient";
 import HomePage from "./pages/HomePage";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -17,7 +16,6 @@ const RootLayout = () => (
     <Navbar />
     <ScrollToTop />
     <Outlet />
-    <ButtonGradient />
     <Footer />
   </>
 );

@@ -9,6 +9,7 @@ const ContactForm = () => {
   const [number, setNumber] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+  const MAX_CHARS = 500;
 
   const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
@@ -108,14 +109,25 @@ const ContactForm = () => {
             onChange={(e) => setNumber(e.target.value)}
             className="w-full rounded-md border border-n-7 bg-n-7 px-4 py-3 text-n-2 focus:outline-none focus:ring-1 focus:ring-indigo-500"
           />
-
-          <textarea
-            rows={4}
-            placeholder="Your message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            className="w-full resize-none rounded-md border border-n-7 bg-n-7 px-4 py-3 text-n-2 focus:outline-none focus:ring-1 focus:ring-indigo-500"
-          />
+          <div className="relative w-full">
+            <textarea
+              rows={6}
+              placeholder="Your message"
+              value={message}
+              onChange={(e) => {
+                {
+                  const value = e.target.value;
+                  if (value.length <= MAX_CHARS) {
+                    setMessage(value);
+                  }
+                }
+              }}
+              className="w-full resize-none rounded-md border border-n-7 bg-n-7 px-4 py-3 text-n-2 focus:outline-none focus:ring-1 focus:ring-indigo-500"
+            />
+            <div className="pointer-events-none absolute right-3 top-2 text-xs text-n-4">
+              {message.length}/{MAX_CHARS}
+            </div>
+          </div>
 
           <Button
             type="submit"
