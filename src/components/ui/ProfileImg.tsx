@@ -1,4 +1,5 @@
-import profileImage from "../../assets/hero/saqib.png";
+const profileImage =
+  "https://res.cloudinary.com/dddorzxo2/image/upload/v1772757598/saqib_t7iakt.png";
 
 const ProfileImg: React.FC = () => {
   return (
@@ -9,7 +10,7 @@ const ProfileImg: React.FC = () => {
       {/* image */}
       <img
         src={profileImage}
-        alt="Saqib profile"
+        alt="Saqib profile img"
         className="relative z-10 h-full w-full rounded-2xl object-cover"
       />
     </div>
