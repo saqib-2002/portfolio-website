@@ -1,7 +1,6 @@
 import Heading from "../components/Heading";
 import ProjectsSection from "../components/layout/ProjectsSection";
 import FeaturedProject from "../components/ux/FeaturedProject";
-import { benefitImage5 } from "../assets";
 
 const Projects: React.FC = () => {
   return (
@@ -21,17 +20,23 @@ const Projects: React.FC = () => {
           {/* ambient glow */}
           <div className="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-br from-indigo-500/20 via-purple-500/10 to-pink-500/20 blur-2xl" />
           <FeaturedProject
-            title="Blog Platform"
-            description="A full-stack blog platform built with the MERN stack, focused on performance, scalability, and clean UX."
-            techStack={["React", "Node.js", "Express", "MongoDB", "Firebase"]}
-            metrics={[
-              { label: "Monthly Users", value: "4.2k+" },
-              { label: "Uptime", value: "99.99%" },
-              { label: "Avg. Load Time", value: "0.8s" },
+            title="Lekki AI"
+            description="A Chrome extension that converts voice to text in real time, translates it instantly, and refines the transcript using AI for clearer and more accurate communication."
+            techStack={[
+              "Chrome Extension",
+              "JavaScript",
+              "Web Audio API",
+              "Speech-to-Text API",
+              "AI",
             ]}
-            liveUrl="https://google.com"
-            githubUrl="/"
-            imageUrl={benefitImage5}
+            metrics={[
+              { label: "Transcription", value: "Real-time" },
+              { label: "Translation", value: "Multi-language" },
+              { label: "AI Enhancement", value: "Enabled" },
+            ]}
+            statusText="Currently in development..."
+            liveUrl=""
+            imageUrl="https://res.cloudinary.com/dddorzxo2/image/upload/v1772848122/Screenshot_380_on065y.png"
           />
         </div>
       </div>

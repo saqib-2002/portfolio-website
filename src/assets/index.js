@@ -34,25 +34,6 @@ import js from "./collaboration/js.svg";
 import ml from "./collaboration/ml.svg";
 import mongo from "./collaboration/mongo.svg";
 
-import benefitCard1 from "../benefitsCards/card-1.svg";
-import benefitCard2 from "../benefitsCards/card-2.svg";
-import benefitCard3 from "../benefitsCards/card-3.svg";
-import benefitCard4 from "../benefitsCards/card-4.svg";
-import benefitCard5 from "../benefitsCards/card-5.svg";
-import benefitCard6 from "../benefitsCards/card-6.svg";
-import benefitIcon1 from "./benefits/icon-1.svg";
-import benefitIcon2 from "./benefits/icon-2.svg";
-import benefitIcon3 from "./benefits/icon-3.svg";
-import benefitIcon4 from "./benefits/icon-4.svg";
-import benefitIcon5 from "./benefits/icon-5.svg";
-import benefitIcon6 from "./benefits/icon-6.svg";
-import benefitImage1 from "./benefits/travel-list.png";
-import benefitImage2 from "./benefits/retro-game.png";
-import benefitImage3 from "./benefits/news.png";
-import benefitImage4 from "./benefits/geolocation.png";
-import benefitImage5 from "./benefits/college-canteen.png";
-import benefitImage6 from "./benefits/slide-form.png";
-
 import github from "./socials/github.svg";
 import facebook from "./socials/facebook.svg";
 import instagram from "./socials/instagram.svg";
@@ -97,24 +78,6 @@ export {
   ml,
   nextjs,
   js,
-  benefitCard1,
-  benefitCard2,
-  benefitCard3,
-  benefitCard4,
-  benefitCard5,
-  benefitCard6,
-  benefitIcon1,
-  benefitIcon2,
-  benefitIcon3,
-  benefitIcon4,
-  benefitIcon5,
-  benefitIcon6,
-  benefitImage1,
-  benefitImage2,
-  benefitImage3,
-  benefitImage4,
-  benefitImage5,
-  benefitImage6,
   github,
   facebook,
   instagram,

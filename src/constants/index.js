@@ -1,22 +1,4 @@
 import {
-  benefitCard1,
-  benefitCard2,
-  benefitCard3,
-  benefitCard4,
-  benefitCard5,
-  benefitCard6,
-  benefitIcon1,
-  benefitIcon2,
-  benefitIcon3,
-  benefitIcon4,
-  benefitIcon5,
-  benefitIcon6,
-  benefitImage1,
-  benefitImage2,
-  benefitImage3,
-  benefitImage4,
-  benefitImage5,
-  benefitImage6,
   reactjs,
   tailwind,
   mongo,
@@ -27,11 +9,7 @@ import {
   cloud,
   github,
   facebook,
-  file02,
-  homeSmile,
   instagram,
-  plusSquare,
-  searchMd,
   telegram,
   twitter,
 } from "../assets";
@@ -75,9 +53,6 @@ export const navigation = [
     onlyMobile: true,
   },
 ];
-
-export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
-
 
 export const capabilities = [
   {
@@ -179,77 +154,6 @@ export const collabApps = [
     icon: cloud,
     width: 38,
     height: 32,
-  },
-];
-
-export const benefits = [
-  {
-    id: "0",
-    title: "Travel List App",
-    text: "A travel list app designed to organize and manage your travel plans, packing lists, and itineraries seamlessly.",
-    backgroundUrl: benefitCard1,
-    iconUrl: benefitIcon1,
-    imageUrl: benefitImage1,
-    explore: "https://github.com/Saqib-2002/Travel-List-App--React",
-    githubStatus: "public",
-    liveUrl: null,
-  },
-  {
-    id: "1",
-    title: "Retro Number Guessing",
-    text: "A retro number guessing game where players try to guess a secret number within a limited number of attempts, reminiscent of classic arcade challenges.",
-    backgroundUrl: benefitCard2,
-    iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
-    light: true,
-    explore: "https://github.com/Saqib-2002/Retro---Guess-the-number",
-    githubStatus: "public",
-    liveUrl: null,
-  },
-  {
-    id: "2",
-    title: "News Website",
-    text: "A dynamic news web app delivering real-time updates and personalized content based on user preferences and trending topics.",
-    backgroundUrl: benefitCard3,
-    iconUrl: benefitIcon3,
-    imageUrl: benefitImage3,
-    explore: "https://github.com/Saqib-2002/News-Website-internship-",
-    githubStatus: "private",
-    liveUrl: "https://news-website.example.com",
-  },
-  {
-    id: "3",
-    title: "Geolocation API",
-    text: "A geolocation API provides real-time geographical data and location-based services for applications and websites.",
-    backgroundUrl: benefitCard4,
-    iconUrl: benefitIcon4,
-    imageUrl: benefitImage4,
-    light: true,
-    explore: "https://github.com/Saqib-2002/Geolocation-API",
-    githubStatus: "public",
-    liveUrl: "", // empty if no live site
-  },
-  {
-    id: "4",
-    title: "College Canteen",
-    text: "A college canteen web app designed to streamline food ordering, payment, and menu browsing for students and staff on campus.",
-    backgroundUrl: benefitCard5,
-    iconUrl: benefitIcon5,
-    imageUrl: benefitImage5,
-    explore: "https://github.com/Saqib-2002/The-College-Canteen-Final",
-    githubStatus: "public",
-    liveUrl: "https://college-canteen.example.com",
-  },
-  {
-    id: "5",
-    title: "Sliding Login Form",
-    text: "A sliding form interface that simplifies user interaction by revealing form fields with smooth sliding animations.",
-    backgroundUrl: benefitCard6,
-    iconUrl: benefitIcon6,
-    imageUrl: benefitImage6,
-    explore: "https://github.com/Saqib-2002/Sliding-Login-Form",
-    githubStatus: "public",
-    liveUrl: "https://sliding-login-form.example.com",
   },
 ];
 

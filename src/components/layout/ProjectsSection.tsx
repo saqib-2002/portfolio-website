@@ -1,6 +1,9 @@
-import { benefits } from "../../constants/index.js";
+import { useState } from "react";
+import { projects } from "../../constants/projects";
 import Button from "../ux/Button";
 import ProjectCard from "../ux/ProjectCard";
+
+type ProjectType = "client" | "saas" | "personal";
 
 interface Project {
   id: number | string;
@@ -11,6 +14,7 @@ interface Project {
   explore?: string;
   liveUrl?: string;
   githubStatus?: "public" | "private";
+  type: ProjectType;
 }
 interface ProjectsSectionProps {
   showAll?: boolean;
@@ -18,7 +22,21 @@ interface ProjectsSectionProps {
 export default function ProjectsSection({
   showAll = false,
 }: ProjectsSectionProps) {
-  const visibleProjects = showAll ? benefits : benefits.slice(0, 5);
+  const [filter, setFilter] = useState<"all" | ProjectType>("all");
+
+  const visibleProjects = showAll ? projects : projects.slice(0, 5);
+
+  const filteredProjects =
+    filter === "all"
+      ? visibleProjects
+      : visibleProjects.filter((project) => project.type === filter);
+
+  const filterTypes: ("all" | ProjectType)[] = [
+    "all",
+    "client",
+    "saas",
+    "personal",
+  ];
 
   return (
     <section id="projects" className="relative py-20">
@@ -41,13 +59,21 @@ export default function ProjectsSection({
           </p>
         </div>
 
+        <div className="mb-10 flex flex-wrap justify-center gap-4">
+          {filterTypes.map((type) => (
+            <Button key={type} onClick={() => setFilter(type)}>
+              {type === "all" ? "All Projects" : type}
+            </Button>
+          ))}
+        </div>
+
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {visibleProjects.map((item) => (
+          {filteredProjects.map((item) => (
             <ProjectCard key={item.id} item={item} />
           ))}
         </div>
 
-        {!showAll && benefits.length > 5 && (
+        {!showAll && projects.length > 5 && (
           <div className="mt-12 flex justify-center">
             <Button to="/projects">Explore More Projects</Button>
           </div>
