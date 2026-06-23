@@ -27,7 +27,7 @@ export default function Hero() {
             <Button to="/projects">View Projects</Button>
 
             <Button
-              href="https://drive.google.com/file/d/1JhZ8lHsuB2VrOAKW2ENjNlqbwQRVNt7X/view"
+              href="https://drive.google.com/file/d/1JhZ8lHsuB2VrOAKW2ENjNlqbwQRVNt7X/view?usp=sharing"
               target="_blank"
             >
               Download Resume
